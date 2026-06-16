@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Screen Off Recorder</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --navy: #0f1a2e;
+      --navy-mid: #16213e;
+      --navy-soft: #1e2d45;
+      --red: #e53935;
+      --red-dark: #b71c1c;
+      --white: #ffffff;
+      --text: #1a1a2e;
+      --text-mute: #5a6275;
+      --bg: #f0f2f7;
+      --card: #ffffff;
+      --border: #e2e6ef;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 52px 24px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* subtle radial glow behind the logo */
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(229, 57, 53, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      border: 3px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 6px rgba(229, 57, 53, 0.15);
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .header-app-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--red);
+      letter-spacing: 0.3px;
+      margin-bottom: 6px;
+    }
+
+    header .date {
+      font-size: 0.82rem;
+      opacity: 0.5;
+    }
+
+    /* ── Red accent rule below header ───────────────── */
+    .accent-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy-mid) 0%, var(--red) 50%, var(--navy-mid) 100%);
+    }
+
+    /* ── Main layout ─────────────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 64px;
+    }
+
+    /* ── Cards ───────────────────────────────────────── */
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(15, 26, 46, 0.08);
+      padding: 30px 34px;
+      margin-bottom: 20px;
+      border-left: 4px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-left-color: var(--red);
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* red dot prefix on every section heading */
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--red);
+      flex-shrink: 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 8px 0 12px 22px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.82em;
+      background: #eef0f6;
+      color: var(--navy);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* ── Permission badges ───────────────────────────── */
+    .badge {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 6px;
+      padding: 3px 9px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      margin-right: 4px;
+      margin-bottom: 4px;
+      letter-spacing: 0.4px;
+      vertical-align: middle;
+    }
+
+    /* ── Highlight box ───────────────────────────────── */
+    .highlight-box {
+      background: rgba(229, 57, 53, 0.06);
+      border-left: 4px solid var(--red);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .highlight-box strong {
+      color: var(--red-dark);
+    }
+
+    /* ── Links ───────────────────────────────────────── */
+    a {
+      color: var(--red-dark);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Footer ──────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.45);
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 20px 24px;
+    }
+
+    footer span {
+      color: var(--red);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img class="header-logo" src="playstore/icon-512.png" alt="Screen Off Recorder icon" />
+    <div class="header-app-name">Screen Off Recorder</div>
+    <h1>Privacy Policy</h1>
+    <div class="date">Last updated: June 16, 2026</div>
+  </header>
+
+  <div class="accent-bar"></div>
+
+  <main>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        Screen Off Recorder ("the App") lets you record video and audio while the screen is off or the
+        app is backgrounded. This policy explains what data the App accesses, how it is used, and
+        whether any of it leaves your device.
+      </p>
+      <div class="highlight-box">
+        <strong>Short version:</strong> All recordings stay on your device. The developer never
+        collects, stores, or transmits your videos, audio, or location. The only outbound network
+        activity is ads served by Google AdMob.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Permissions &amp; Data Access</h2>
+
+      <p><span class="badge">CAMERA</span></p>
+      <p>
+        Used exclusively to capture video frames during a recording session. No camera feed is
+        transmitted over the network or shared with third parties. The App intentionally suppresses
+        the live preview so recording works with the screen off.
+      </p>
+
+      <p><span class="badge">RECORD_AUDIO</span></p>
+      <p>
+        Used to capture the microphone signal into the recording. Audio can be disabled in Settings.
+        Audio data is written only to the output MP4 file on your device.
+      </p>
+
+      <p><span class="badge">ACCESS_FINE_LOCATION</span> <span class="badge">ACCESS_COARSE_LOCATION</span></p>
+      <p>
+        Requested only when the <em>Location Overlay</em> option is enabled in Settings. If enabled,
+        the App resolves your location once at the start of each recording session and burns the
+        human-readable address into the bottom corner of every video frame as a text overlay. Location
+        data is never stored separately, never uploaded, and never shared. If the overlay is disabled,
+        these permissions are not used.
+      </p>
+
+      <p><span class="badge">READ_EXTERNAL_STORAGE</span> <span class="badge">WRITE_EXTERNAL_STORAGE</span></p>
+      <p>
+        Used to write raw recording segments and merged MP4 files to
+        <code>Movies/OffscreenRecorder/</code> on your device. On Android 9 and below this requires
+        explicit storage permission; on Android 10+ the App uses scoped storage. You can optionally
+        point the App to a custom folder via the Storage Access Framework picker in Settings, in which
+        case files are written there instead.
+      </p>
+
+      <p><span class="badge">FOREGROUND_SERVICE</span> <span class="badge">WAKE_LOCK</span></p>
+      <p>
+        Required to keep the recording service alive while the screen is off. A persistent
+        notification is shown whenever recording is active. A partial wake lock prevents the CPU from
+        sleeping mid-session.
+      </p>
+
+      <p><span class="badge">POST_NOTIFICATIONS</span></p>
+      <p>Used solely to display the foreground-service recording notification and its controls (Pause / Stop).</p>
+
+      <p><span class="badge">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></p>
+      <p>
+        The App may request battery-optimization exemption to prevent the OS from killing long
+        recording sessions. No data is collected as a result of this permission.
+      </p>
+
+      <p><span class="badge">SYSTEM_ALERT_WINDOW</span></p>
+      <p>
+        May be used to display a minimal recording-status indicator while the App is in the
+        background. This overlay contains no user data.
+      </p>
+
+      <p><span class="badge">INTERNET</span> <span class="badge">ACCESS_NETWORK_STATE</span></p>
+      <p>
+        Used only by Google AdMob to display advertisements. See the
+        <strong>Advertising</strong> section below for details.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Stored on Your Device</h2>
+      <ul>
+        <li>
+          <strong>Raw segments</strong> — Fixed-length MP4 clips written to
+          <code>Movies/OffscreenRecorder/clips/</code> during recording. Deleted automatically after
+          a successful merge.
+        </li>
+        <li>
+          <strong>Merged recordings</strong> — Final MP4 file written to
+          <code>Movies/OffscreenRecorder/merged/</code> (or your chosen SAF folder). The filename
+          includes a device identifier (<code>ANDROID_ID</code>) and the recording timestamp; this is
+          for local file organisation only and is never transmitted.
+        </li>
+        <li>
+          <strong>App preferences</strong> — Camera facing, resolution, audio on/off, overlay
+          toggles, and optional SAF folder URI stored locally via Android DataStore. Not shared with
+          the developer.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data Transmission</h2>
+      <p>
+        The App does <strong>not</strong> have its own backend. No videos, audio, location data,
+        device identifiers, or usage analytics are ever sent to the developer's servers.
+      </p>
+      <p>
+        The only outbound network calls are made by the Google AdMob SDK (see below).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Advertising (Google AdMob)</h2>
+      <p>
+        The App displays ads provided by Google AdMob. Google may collect and use data on your device
+        to serve personalised or non-personalised ads in accordance with
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+      </p>
+      <p>
+        This may include advertising identifiers (GAID / Android Advertising ID) and general device
+        information. You can reset or opt out of ad personalisation at any time in your device
+        settings under <em>Google &gt; Ads</em>.
+      </p>
+      <p>
+        The developer does not have access to, and does not receive, any user-level data collected by
+        AdMob beyond aggregated, anonymised revenue metrics.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Sharing</h2>
+      <p>
+        The App does not sell, trade, or otherwise transfer your personal information to third parties.
+        The only exception is the AdMob SDK described above, which operates under Google's own privacy
+        terms.
+      </p>
+      <p>
+        When you use the system <em>Share</em> button inside the App, your chosen video is sent to
+        whichever external app you select. This action is entirely under your control.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Children's Privacy</h2>
+      <p>
+        The App is not directed at children under the age of 13. The developer does not knowingly
+        collect personal information from children.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Retention &amp; Deletion</h2>
+      <p>
+        All data (recordings and preferences) resides on your device. You can delete recordings at
+        any time from within the App or from your device's file manager. Uninstalling the App removes
+        all preferences; recordings in external storage may persist and can be deleted manually.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to This Policy</h2>
+      <p>
+        This policy may be updated from time to time. The "Last updated" date at the top of this page
+        will reflect any changes. Continued use of the App after a policy update constitutes
+        acceptance of the revised policy.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Questions or concerns about this privacy policy? Contact the developer at:<br />
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 <span>Screen Off Recorder</span>. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
