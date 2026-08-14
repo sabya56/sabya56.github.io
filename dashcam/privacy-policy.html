@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – DashCam</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --navy: #0b2e5c;
+      --navy-mid: #123a6e;
+      --navy-soft: #1e3d68;
+      --amber: #ffc048;
+      --amber-deep: #8a5a00;
+      --blue: #1a5fb4;
+      --white: #ffffff;
+      --text: #16202e;
+      --text-mute: #5a6478;
+      --bg: #eef1f6;
+      --card: #ffffff;
+      --border: #dfe4ee;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 52px 24px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* subtle radial glow behind the logo */
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(255, 192, 72, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      border: 3px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 6px rgba(255, 192, 72, 0.15);
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .header-app-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--amber);
+      letter-spacing: 0.3px;
+      margin-bottom: 6px;
+    }
+
+    header .date {
+      font-size: 0.82rem;
+      opacity: 0.5;
+    }
+
+    /* ── Amber accent rule below header ─────────────── */
+    .accent-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy-mid) 0%, var(--amber) 50%, var(--navy-mid) 100%);
+    }
+
+    /* ── Main layout ─────────────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 64px;
+    }
+
+    /* ── Cards ───────────────────────────────────────── */
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(11, 46, 92, 0.08);
+      padding: 30px 34px;
+      margin-bottom: 20px;
+      border-left: 4px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-left-color: var(--amber);
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* amber dot prefix on every section heading */
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 8px 0 12px 22px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.82em;
+      background: #eef0f6;
+      color: var(--navy);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* ── Permission badges ───────────────────────────── */
+    .badge {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 6px;
+      padding: 3px 9px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      margin-right: 4px;
+      margin-bottom: 4px;
+      letter-spacing: 0.4px;
+      vertical-align: middle;
+    }
+
+    /* Optional permissions read differently from the two the app cannot work without. */
+    .badge-optional {
+      background: var(--navy-soft);
+      opacity: 0.9;
+    }
+
+    /* ── Highlight box ───────────────────────────────── */
+    .highlight-box {
+      background: rgba(255, 192, 72, 0.12);
+      border-left: 4px solid var(--amber);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .highlight-box strong {
+      color: var(--amber-deep);
+    }
+
+    /* ── Links ───────────────────────────────────────── */
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Footer ──────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.45);
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 20px 24px;
+    }
+
+    footer span {
+      color: var(--amber);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img class="header-logo" src="playstore/icon-512.png" alt="DashCam icon" />
+    <div class="header-app-name">DashCam &middot; com.nitcart.dashcam</div>
+    <h1>Privacy Policy</h1>
+    <div class="date">Last updated: August 19, 2026</div>
+  </header>
+
+  <div class="accent-bar"></div>
+
+  <main>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        DashCam ("the App") turns your phone into a dashcam: it loop-records your drive, protects
+        the clips that matter, and keeps everything on the phone. This policy explains what the App
+        accesses, how it is used, and whether any of it leaves your device.
+      </p>
+      <div class="highlight-box">
+        <strong>Short version:</strong> your footage stays on your device. Video, audio and
+        location are written to the App's own private storage and are never uploaded &mdash;
+        Nitcart operates no server and receives nothing about you or your driving.
+      </div>
+      <p>
+        The App does show ads, supplied by Google AdMob, and that is the one part of it that talks
+        to the internet. AdMob collects device-level data of its own to select and measure those
+        ads; what it collects, and how to limit it, is set out under
+        <a href="#advertising">Advertising</a> below. Nothing the App records &mdash; not a frame
+        of video, not a second of audio, not a coordinate &mdash; is any part of that.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Permissions &amp; Data Access</h2>
+      <p>
+        Everything these permissions produce is used on the device to make your recording, and is
+        written to the App's own private storage.
+      </p>
+
+      <p><span class="badge">CAMERA</span></p>
+      <p>
+        Recording the video. This is the App's core function. The camera is only ever opened while
+        you are on the Record screen or while a recording session is running, and a session always
+        shows an ongoing notification you can stop it from.
+      </p>
+
+      <p><span class="badge badge-optional">RECORD_AUDIO</span></p>
+      <p>
+        Recording sound alongside the video. Optional — turn "Record audio" off in Settings and the
+        microphone is never opened. Recording conversations inside a vehicle is regulated
+        differently from country to country; see <a href="#responsibility">Recording Responsibly</a>.
+      </p>
+
+      <p>
+        <span class="badge badge-optional">ACCESS_FINE_LOCATION</span>
+        <span class="badge badge-optional">ACCESS_COARSE_LOCATION</span>
+      </p>
+      <p>
+        Reading your speed and coordinates so they can be burned into the video frames and shown on
+        the Record screen. Optional — turn the speed and GPS overlay off and location is never
+        requested. Location is read only while a recording is running. DashCam does
+        <strong>not</strong> request background location access.
+      </p>
+      <p>
+        <span class="badge">INTERNET</span>
+        <span class="badge">ACCESS_NETWORK_STATE</span>
+        <span class="badge">AD_ID</span>
+      </p>
+      <p>
+        Used by the Google AdMob SDK, and by nothing else in the App. No other part of DashCam
+        opens a network connection: recording, playback, the storage limit and the overlays all
+        work with the device offline. See <a href="#advertising">Advertising</a>.
+      </p>
+
+
+      <p>
+        <span class="badge">FOREGROUND_SERVICE</span>
+        <span class="badge">WAKE_LOCK</span>
+      </p>
+      <p>
+        Required to keep a recording alive for the length of a drive, including while you use other
+        apps. The service declares the <code>camera</code>, <code>microphone</code> and
+        <code>location</code> types, matching exactly what it uses, and a wake lock keeps the CPU
+        from sleeping mid-session.
+      </p>
+
+      <p><span class="badge">POST_NOTIFICATIONS</span></p>
+      <p>
+        Showing the ongoing recording notification, which Android requires for a foreground service,
+        and telling you when an incident was saved or a drive stopped on its own.
+      </p>
+
+      <p><span class="badge badge-optional">SYSTEM_ALERT_WINDOW</span></p>
+      <p>
+        Optional. Powers the small floating preview window that lets you see and stop a recording
+        without leaving Maps, and grants the exemption that lets a charger or Bluetooth trigger start
+        recording hands-free on newer Android versions. The overlay contains no personal data.
+      </p>
+
+      <p><span class="badge badge-optional">BLUETOOTH_CONNECT</span></p>
+      <p>
+        Optional. Used only to list the Bluetooth devices your phone is <em>already</em> paired with,
+        so you can choose which car stereo counts as "getting into the car". DashCam does not scan
+        for, connect to, or exchange data with any device.
+      </p>
+
+      <p><span class="badge badge-optional">RECEIVE_BOOT_COMPLETED</span></p>
+      <p>Optional. Used only if you switch on "Start after device boot".</p>
+
+      <p><span class="badge badge-optional">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></p>
+      <p>
+        Optional, and never granted silently — the App opens the standard Android dialog and you
+        decide. Without it, the system stops long recordings. No data is collected as a result of
+        this permission.
+      </p>
+
+      <div class="highlight-box">
+        <strong>Not requested:</strong> no storage permissions and no background location. Clips
+        are written to the App's own external files directory, which needs no storage permission
+        at all &mdash; which is also why uninstalling the App deletes them.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Data Stored on Your Device</h2>
+      <ul>
+        <li>
+          <strong>Video clips</strong> — including any audio you chose to record, and the timestamp,
+          speed and coordinates burned into the picture. Written to DashCam's private app storage,
+          which is not visible to your gallery or to other apps.
+        </li>
+        <li>
+          <strong>Your settings</strong> — resolution, segment length, storage limit, overlay
+          choices, automation triggers and so on, stored locally via Android DataStore.
+        </li>
+      </ul>
+      <p>
+        The App itself stores nothing else about you: no usage log, no crash reporting service and
+        no device fingerprint. The advertising ID is Android's own, held by the system rather
+        than by DashCam, and is used only by the ad SDK &mdash; see
+        <a href="#advertising">Advertising</a>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Transmission</h2>
+      <p>
+        The App has no backend of its own. Nitcart operates no server, and receives no videos,
+        audio, location data, device identifiers or usage statistics from you.
+      </p>
+      <p>
+        The only data leaving your device is what the Google AdMob SDK sends in order to request
+        and measure an ad. Your recordings are never part of that: the App keeps them in private
+        storage and hands them to nothing.
+      </p>
+    </div>
+
+    <div class="card" id="advertising">
+      <h2>Advertising (Google AdMob)</h2>
+      <p>
+        The App is paid for by ads served through Google AdMob: one in the Clips list, and an
+        occasional full-screen ad between actions.
+      </p>
+      <p>
+        To select and measure those ads, Google may collect and use data from your device in
+        accordance with
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+        That typically includes your Android advertising ID, general device information, and an
+        approximate location derived from your IP address. Nitcart receives none of it beyond
+        aggregate, anonymous revenue figures.
+      </p>
+      <div class="highlight-box">
+        <strong>What is never sent:</strong> your recordings. The video, audio, coordinates and
+        speed stamped into your clips are not shared with Google, with any advertiser, or with
+        anyone else. The ad SDK has no access to them.
+      </div>
+      <p>
+        You can reset or delete your advertising ID, and opt out of ad personalisation, at any
+        time under <em>Settings &gt; Google &gt; Ads</em>. Deleting the ID stops personalised ads;
+        you will still see ads, chosen without it.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Sharing</h2>
+      <p>
+        Nitcart does not sell, trade or otherwise transfer your information to anyone. The only
+        third party involved is Google AdMob, described above, which operates under Google's own
+        privacy terms.
+      </p>
+      <p>
+        Your footage is shared only when you deliberately share it yourself, using the share
+        button, at which point it goes wherever you send it and this policy no longer governs it.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Retention &amp; Deletion</h2>
+      <ul>
+        <li>Delete individual clips from the Clips screen inside the App.</li>
+        <li>
+          Loop recording deletes the oldest clips automatically to stay inside the storage limit you
+          set. Clips marked as incidents are deliberately exempt and are never deleted
+          automatically — you remove those yourself.
+        </li>
+        <li>
+          Incident-only recording, if you switch it on, discards ordinary footage as you drive and
+          keeps only the clips an impact or the Incident button claimed.
+        </li>
+        <li>
+          Uninstalling DashCam removes the App's private storage and every recording in it. There is
+          no copy anywhere else, so export anything you want to keep first.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Children's Privacy</h2>
+      <p>
+        DashCam is not directed at children and is rated for a general audience of drivers. The
+        developer does not knowingly collect anything from anyone, of any age, because nothing is
+        collected at all.
+      </p>
+    </div>
+
+    <div class="card" id="responsibility">
+      <h2>Recording Responsibly</h2>
+      <p>
+        A dashcam records public places, other road users and anyone in your vehicle. The laws
+        covering that — particularly the recording of audio, and the retention of footage showing
+        identifiable people — differ from country to country and sometimes between regions of the
+        same country.
+      </p>
+      <p>
+        You are responsible for using DashCam lawfully where you are. If audio recording is
+        restricted where you drive, turn "Record audio" off in Settings. Please also mount your phone
+        safely and do not operate the App while driving.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to This Policy</h2>
+      <p>
+        This policy may be updated from time to time. The "Last updated" date at the top of this page
+        always reflects the current version. If a future version of DashCam ever gained a feature
+        that transmitted data, this policy would be updated before that version shipped, and the
+        change would be described in the App's release notes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Questions or concerns about this privacy policy? Contact the developer at:<br />
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 <span>DashCam</span>. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
