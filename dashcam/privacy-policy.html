@@ -1,244 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dashcam">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – DashCam</title>
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <title>DashCam Privacy Policy — Android Dash Cam App | NITCART</title>
+  <meta name="description" content="Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://apps.nitcart.com/dashcam/privacy-policy.html" />
+  <meta name="theme-color" content="#0b1d3a" />
+  <link rel="icon" href="playstore/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="playstore/icon-512.png" />
 
-    :root {
-      --navy: #0b2e5c;
-      --navy-mid: #123a6e;
-      --navy-soft: #1e3d68;
-      --amber: #ffc048;
-      --amber-deep: #8a5a00;
-      --blue: #1a5fb4;
-      --white: #ffffff;
-      --text: #16202e;
-      --text-mute: #5a6478;
-      --bg: #eef1f6;
-      --card: #ffffff;
-      --border: #dfe4ee;
-    }
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NITCART Apps" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="DashCam Privacy Policy — Android Dash Cam App" />
+  <meta property="og:description" content="Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet." />
+  <meta property="og:url" content="https://apps.nitcart.com/dashcam/privacy-policy.html" />
+  <meta property="og:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DashCam privacy policy" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DashCam Privacy Policy — Android Dash Cam App" />
+  <meta name="twitter:description" content="Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet." />
+  <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
+  <meta name="twitter:image:alt" content="DashCam privacy policy" />
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    /* ── Header ─────────────────────────────────────── */
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 52px 24px 44px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* subtle radial glow behind the logo */
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(255, 192, 72, 0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .header-logo {
-      width: 88px;
-      height: 88px;
-      border-radius: 22px;
-      border: 3px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 6px rgba(255, 192, 72, 0.15);
-      margin-bottom: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    header h1 {
-      font-size: 1.9rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    .header-app-name {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--amber);
-      letter-spacing: 0.3px;
-      margin-bottom: 6px;
-    }
-
-    header .date {
-      font-size: 0.82rem;
-      opacity: 0.5;
-    }
-
-    /* ── Amber accent rule below header ─────────────── */
-    .accent-bar {
-      height: 4px;
-      background: linear-gradient(90deg, var(--navy-mid) 0%, var(--amber) 50%, var(--navy-mid) 100%);
-    }
-
-    /* ── Main layout ─────────────────────────────────── */
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 64px;
-    }
-
-    /* ── Cards ───────────────────────────────────────── */
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      box-shadow: 0 2px 16px rgba(11, 46, 92, 0.08);
-      padding: 30px 34px;
-      margin-bottom: 20px;
-      border-left: 4px solid transparent;
-      transition: border-color 0.2s;
-    }
-
-    .card:hover {
-      border-left-color: var(--amber);
-    }
-
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* amber dot prefix on every section heading */
-    h2::before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--amber);
-      flex-shrink: 0;
-    }
-
-    p {
-      margin-bottom: 12px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin: 8px 0 12px 22px;
-    }
-
-    ul li {
-      margin-bottom: 6px;
-    }
-
-    code {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-      font-size: 0.82em;
-      background: #eef0f6;
-      color: var(--navy);
-      padding: 1px 6px;
-      border-radius: 4px;
-    }
-
-    /* ── Permission badges ───────────────────────────── */
-    .badge {
-      display: inline-block;
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 6px;
-      padding: 3px 9px;
-      font-size: 0.74rem;
-      font-weight: 700;
-      margin-right: 4px;
-      margin-bottom: 4px;
-      letter-spacing: 0.4px;
-      vertical-align: middle;
-    }
-
-    /* Optional permissions read differently from the two the app cannot work without. */
-    .badge-optional {
-      background: var(--navy-soft);
-      opacity: 0.9;
-    }
-
-    /* ── Highlight box ───────────────────────────────── */
-    .highlight-box {
-      background: rgba(255, 192, 72, 0.12);
-      border-left: 4px solid var(--amber);
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 14px 0;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .highlight-box strong {
-      color: var(--amber-deep);
-    }
-
-    /* ── Links ───────────────────────────────────────── */
-    a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* ── Footer ──────────────────────────────────────── */
-    footer {
-      background: var(--navy);
-      color: rgba(255, 255, 255, 0.45);
-      text-align: center;
-      font-size: 0.8rem;
-      padding: 20px 24px;
-    }
-
-    footer span {
-      color: var(--amber);
-    }
-  </style>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/nitcart.css" />
 </head>
 
 <body>
 
-  <header>
-    <img class="header-logo" src="playstore/icon-512.png" alt="DashCam icon" />
-    <div class="header-app-name">DashCam &middot; com.nitcart.dashcam</div>
-    <h1>Privacy Policy</h1>
-    <div class="date">Last updated: August 19, 2026</div>
+  <nav class="navbar navbar-expand sticky-top site-nav policy-nav" data-bs-theme="dark">
+    <div class="container-fluid px-3 px-lg-4">
+      <a href="/" class="navbar-brand">NIT<span>CART</span></a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./">Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">All apps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero policy-hero">
+    <div class="container">
+      <img class="hero-icon" src="playstore/icon-512.png" width="88" height="88" alt="DashCam icon" />
+      <div class="policy-app">DashCam &middot; com.nitcart.dashcam</div>
+      <h1>Privacy Policy</h1>
+      <div class="policy-date">Last updated: August 19, 2026</div>
+    </div>
   </header>
 
   <div class="accent-bar"></div>
 
-  <main>
+  <main class="policy-body">
+    <div class="container">
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Overview</h2>
       <p>
         DashCam ("the App") turns your phone into a dashcam: it loop-records your drive, protects
@@ -258,22 +80,24 @@
         of video, not a second of audio, not a coordinate &mdash; is any part of that.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Permissions &amp; Data Access</h2>
       <p>
         Everything these permissions produce is used on the device to make your recording, and is
         written to the App's own private storage.
       </p>
 
-      <p><span class="badge">CAMERA</span></p>
+      <p><span class="badge perm-badge">CAMERA</span></p>
       <p>
         Recording the video. This is the App's core function. The camera is only ever opened while
         you are on the Record screen or while a recording session is running, and a session always
         shows an ongoing notification you can stop it from.
       </p>
 
-      <p><span class="badge badge-optional">RECORD_AUDIO</span></p>
+      <p><span class="badge perm-badge perm-optional">RECORD_AUDIO</span></p>
       <p>
         Recording sound alongside the video. Optional — turn "Record audio" off in Settings and the
         microphone is never opened. Recording conversations inside a vehicle is regulated
@@ -281,8 +105,8 @@
       </p>
 
       <p>
-        <span class="badge badge-optional">ACCESS_FINE_LOCATION</span>
-        <span class="badge badge-optional">ACCESS_COARSE_LOCATION</span>
+        <span class="badge perm-badge perm-optional">ACCESS_FINE_LOCATION</span>
+        <span class="badge perm-badge perm-optional">ACCESS_COARSE_LOCATION</span>
       </p>
       <p>
         Reading your speed and coordinates so they can be burned into the video frames and shown on
@@ -291,9 +115,9 @@
         <strong>not</strong> request background location access.
       </p>
       <p>
-        <span class="badge">INTERNET</span>
-        <span class="badge">ACCESS_NETWORK_STATE</span>
-        <span class="badge">AD_ID</span>
+        <span class="badge perm-badge">INTERNET</span>
+        <span class="badge perm-badge">ACCESS_NETWORK_STATE</span>
+        <span class="badge perm-badge">AD_ID</span>
       </p>
       <p>
         Used by the Google AdMob SDK, and by nothing else in the App. No other part of DashCam
@@ -303,8 +127,8 @@
 
 
       <p>
-        <span class="badge">FOREGROUND_SERVICE</span>
-        <span class="badge">WAKE_LOCK</span>
+        <span class="badge perm-badge">FOREGROUND_SERVICE</span>
+        <span class="badge perm-badge">WAKE_LOCK</span>
       </p>
       <p>
         Required to keep a recording alive for the length of a drive, including while you use other
@@ -313,30 +137,30 @@
         from sleeping mid-session.
       </p>
 
-      <p><span class="badge">POST_NOTIFICATIONS</span></p>
+      <p><span class="badge perm-badge">POST_NOTIFICATIONS</span></p>
       <p>
         Showing the ongoing recording notification, which Android requires for a foreground service,
         and telling you when an incident was saved or a drive stopped on its own.
       </p>
 
-      <p><span class="badge badge-optional">SYSTEM_ALERT_WINDOW</span></p>
+      <p><span class="badge perm-badge perm-optional">SYSTEM_ALERT_WINDOW</span></p>
       <p>
         Optional. Powers the small floating preview window that lets you see and stop a recording
         without leaving Maps, and grants the exemption that lets a charger or Bluetooth trigger start
         recording hands-free on newer Android versions. The overlay contains no personal data.
       </p>
 
-      <p><span class="badge badge-optional">BLUETOOTH_CONNECT</span></p>
+      <p><span class="badge perm-badge perm-optional">BLUETOOTH_CONNECT</span></p>
       <p>
         Optional. Used only to list the Bluetooth devices your phone is <em>already</em> paired with,
         so you can choose which car stereo counts as "getting into the car". DashCam does not scan
         for, connect to, or exchange data with any device.
       </p>
 
-      <p><span class="badge badge-optional">RECEIVE_BOOT_COMPLETED</span></p>
+      <p><span class="badge perm-badge perm-optional">RECEIVE_BOOT_COMPLETED</span></p>
       <p>Optional. Used only if you switch on "Start after device boot".</p>
 
-      <p><span class="badge badge-optional">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></p>
+      <p><span class="badge perm-badge perm-optional">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></p>
       <p>
         Optional, and never granted silently — the App opens the standard Android dialog and you
         decide. Without it, the system stops long recordings. No data is collected as a result of
@@ -349,8 +173,10 @@
         at all &mdash; which is also why uninstalling the App deletes them.
       </div>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Stored on Your Device</h2>
       <ul>
         <li>
@@ -370,8 +196,10 @@
         <a href="#advertising">Advertising</a>.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Transmission</h2>
       <p>
         The App has no backend of its own. Nitcart operates no server, and receives no videos,
@@ -383,8 +211,10 @@
         storage and hands them to nothing.
       </p>
     </div>
+    </section>
 
-    <div class="card" id="advertising">
+    <section class="card policy-card" id="advertising">
+      <div class="card-body">
       <h2>Advertising (Google AdMob)</h2>
       <p>
         The App is paid for by ads served through Google AdMob: one in the Clips list, and an
@@ -409,8 +239,10 @@
         you will still see ads, chosen without it.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Sharing</h2>
       <p>
         Nitcart does not sell, trade or otherwise transfer your information to anyone. The only
@@ -422,8 +254,10 @@
         button, at which point it goes wherever you send it and this policy no longer governs it.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Retention &amp; Deletion</h2>
       <ul>
         <li>Delete individual clips from the Clips screen inside the App.</li>
@@ -442,8 +276,10 @@
         </li>
       </ul>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Children's Privacy</h2>
       <p>
         DashCam is not directed at children and is rated for a general audience of drivers. The
@@ -451,8 +287,10 @@
         collected at all.
       </p>
     </div>
+    </section>
 
-    <div class="card" id="responsibility">
+    <section class="card policy-card" id="responsibility">
+      <div class="card-body">
       <h2>Recording Responsibly</h2>
       <p>
         A dashcam records public places, other road users and anyone in your vehicle. The laws
@@ -466,8 +304,10 @@
         safely and do not operate the App while driving.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Changes to This Policy</h2>
       <p>
         This policy may be updated from time to time. The "Last updated" date at the top of this page
@@ -476,20 +316,104 @@
         change would be described in the App's release notes.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Contact</h2>
       <p>
         Questions or concerns about this privacy policy? Contact the developer at:<br />
         <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
       </p>
     </div>
+    </section>
 
+    </div>
   </main>
 
-  <footer>
-    &copy; 2026 <span>DashCam</span>. All rights reserved.
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="NITCART apps">
+        <a href="/dashcam/">DashCam</a>
+        <a href="/screen-off-recorder/">Screen Off Recorder</a>
+        <a href="/expense-tracker/">Expense Tracker &amp; Budget</a>
+      </nav>
+      <p>
+        &copy; 2026 <span class="brand">NITCART</span> &nbsp;·&nbsp;
+        <a href="/">All apps</a> &nbsp;·&nbsp;
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
   </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apps.nitcart.com/#organization",
+        "name": "NITCART",
+        "url": "https://apps.nitcart.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://apps.nitcart.com/assets/nitcart-logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "email": "appsupport@nitcart.com",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=NITCART"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://apps.nitcart.com/dashcam/privacy-policy.html#webpage",
+        "url": "https://apps.nitcart.com/dashcam/privacy-policy.html",
+        "name": "DashCam Privacy Policy — Android Dash Cam App | NITCART",
+        "description": "Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://apps.nitcart.com/#website"
+        },
+        "about": {
+          "@id": "https://apps.nitcart.com/dashcam/#app"
+        },
+        "publisher": {
+          "@id": "https://apps.nitcart.com/#organization"
+        },
+        "dateModified": "2026-08-19",
+        "breadcrumb": {
+          "@id": "https://apps.nitcart.com/dashcam/privacy-policy.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://apps.nitcart.com/dashcam/privacy-policy.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "NITCART Apps",
+            "item": "https://apps.nitcart.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "DashCam",
+            "item": "https://apps.nitcart.com/dashcam/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Privacy Policy",
+            "item": "https://apps.nitcart.com/dashcam/privacy-policy.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
 </body>
 

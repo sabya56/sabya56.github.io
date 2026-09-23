@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-expense-tracker">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker &amp; Budget — Private, Offline Money Manager for Android</title>
+  <meta name="description" content="Private, offline expense tracker and budget planner for Android. Track spending, set a budget, scan receipts, get bill reminders. No account, encrypted on your phone." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://apps.nitcart.com/expense-tracker/" />
+  <meta name="theme-color" content="#10292e" />
+  <link rel="icon" href="playstore/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="playstore/icon-512.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NITCART Apps" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Expense Tracker &amp; Budget — A Private Money Manager for Android" />
+  <meta property="og:description" content="Track daily expenses and income, stay inside a budget, and see where your money goes. No account, no cloud: your data stays encrypted on your phone." />
+  <meta property="og:url" content="https://apps.nitcart.com/expense-tracker/" />
+  <meta property="og:image" content="https://apps.nitcart.com/assets/og/expense-tracker.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Expense Tracker & Budget for Android by NITCART" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Expense Tracker &amp; Budget — A Private Money Manager for Android" />
+  <meta name="twitter:description" content="Track daily expenses and income, stay inside a budget, and see where your money goes. No account, no cloud: your data stays encrypted on your phone." />
+  <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/expense-tracker.png" />
+  <meta name="twitter:image:alt" content="Expense Tracker & Budget for Android by NITCART" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/nitcart.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md sticky-top site-nav" data-bs-theme="dark">
+    <div class="container-fluid px-3 px-lg-4">
+      <a href="/" class="navbar-brand">NIT<span>CART</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#screens">Screens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <img class="hero-icon" src="playstore/icon-512.png" width="96" height="96" fetchpriority="high" alt="Expense Tracker &amp; Budget app icon" />
+      <h1 class="hero-title">Track every expense.<br /><span>Keep it to yourself.</span></h1>
+      <p class="hero-lead">
+        Expense Tracker &amp; Budget logs your daily spending and income, keeps you inside a
+        monthly budget, and shows exactly where the money went. There's no account, no sign-up
+        and no cloud. Your financial data stays encrypted on your phone.
+      </p>
+      <a class="btn btn-accent btn-cta btn-glow rounded-pill" href="https://play.google.com/store/apps/details?id=com.nitcart.expensetracker" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </section>
+
+  <div class="accent-bar"></div>
+
+  <section id="facts" class="facts" aria-labelledby="facts-title">
+    <div class="container container-narrow">
+      <div class="section-label">At a glance</div>
+      <h2 id="facts-title" class="visually-hidden">Expense Tracker at a glance</h2>
+      <dl class="facts-grid">
+        <div class="fact"><dt>Price</dt><dd>Free, with ads</dd></div>
+        <div class="fact"><dt>In-app purchases</dt><dd>None</dd></div>
+        <div class="fact"><dt>Requires</dt><dd>Android 8.0+</dd></div>
+        <div class="fact"><dt>Account</dt><dd>Not needed</dd></div>
+        <div class="fact"><dt>Works offline</dt><dd>Yes</dd></div>
+        <div class="fact"><dt>Your data</dt><dd>Encrypted on the phone</dd></div>
+        <div class="fact"><dt>SMS access</dt><dd>None</dd></div>
+        <div class="fact"><dt>Language</dt><dd>English</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="screens" class="section">
+    <div class="container container-narrow">
+      <div class="section-label">Screenshots</div>
+      <h2 class="section-title">A tour of the app</h2>
+
+      <div id="shots" class="carousel slide shot-carousel mt-4" data-bs-ride="carousel" data-bs-interval="5000" aria-roledescription="carousel" aria-label="Expense Tracker screenshots">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="1 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-1-expense.webp" width="540" height="960" alt="Expense tab with a summary card of spending against budget and transactions grouped by date" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">01 / 09</div>
+                  <h3>Track spending effortlessly</h3>
+                  <p>The Expense tab opens on a live summary card showing what you've spent against your monthly budget. Below it, every transaction is grouped by date or category, with a running total for each group.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="2 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-2-income.webp" width="540" height="960" alt="Income tab with a summary card filling toward expected monthly income" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">02 / 09</div>
+                  <h3>Watch your income grow</h3>
+                  <p>Income has a tab of its own. Set an expected monthly income and the card fills toward it as money comes in.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="3 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-3-review.webp" width="540" height="960" alt="Review imported screen listing pending draft expenses with Confirm and Dismiss buttons" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">03 / 09</div>
+                  <h3>Imports you approve</h3>
+                  <p>Payment alerts from your bank and UPI apps can become draft transactions. They're read on your phone and never sent anywhere. Nothing is saved until you confirm it, and the app learns your categories and accounts as you do.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="4 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-4-add.webp" width="540" height="960" alt="New transaction screen with a built-in calculator keypad" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">04 / 09</div>
+                  <h3>Fast, precise entry</h3>
+                  <p>A calculator keypad is built into the New transaction screen, so you can add up a receipt or split a bill as you type. Account, category, date and note all fit on one screen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="5 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-5-settings.webp" width="540" height="960" alt="Settings screen with accounts, categories, recurring transactions, security and backup" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">05 / 09</div>
+                  <h3>Everything in one place</h3>
+                  <p>Accounts, categories, recurring payments, app lock, theme and backup are all reached from one Settings screen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="6 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-6-categories.webp" width="540" height="960" alt="Categories screen with icons and colours for each expense category" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">06 / 09</div>
+                  <h3>Categories that fit you</h3>
+                  <p>Rename, recolour or add income and expense categories, each with its own icon, and group subcategories under a parent.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="7 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-7-category-detail.webp" width="540" height="960" alt="Category detail screen with totals and every transaction in that category" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">07 / 09</div>
+                  <h3>Tap a category, see every rupee</h3>
+                  <p>Open any category or account to see its full history, with totals for whatever period you've filtered to.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="8 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-8-notification.webp" width="540" height="960" alt="Notification asking to review a detected expense" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">08 / 09</div>
+                  <h3>Nothing slips past you</h3>
+                  <p>When your bank app reports a payment, a review notification follows. A spend you forgot to write down still gets recorded, once you confirm it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="9 of 9">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-9-notification-entry.webp" width="540" height="960" alt="Transaction prefilled with amount, account and category from a payment alert" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">09 / 09</div>
+                  <h3>Prefilled and ready to save</h3>
+                  <p>Tap the notification and the amount, account and category are already filled in from the alert. Check them and tap Save.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot-controls">
+          <button type="button" class="shot-btn" data-bs-target="#shots" data-bs-slide="prev" aria-label="Previous screenshot"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Screenshot 1"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="1" aria-label="Screenshot 2"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="2" aria-label="Screenshot 3"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="3" aria-label="Screenshot 4"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="4" aria-label="Screenshot 5"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="5" aria-label="Screenshot 6"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="6" aria-label="Screenshot 7"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="7" aria-label="Screenshot 8"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="8" aria-label="Screenshot 9"></button>
+          </div>
+          <button type="button" class="shot-btn" data-bs-target="#shots" data-bs-slide="next" aria-label="Next screenshot"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section bg-white">
+    <div class="container container-narrow">
+      <div class="section-label">Getting started</div>
+      <h2 class="section-title">How to track expenses and stick to a budget</h2>
+      <p class="section-lead">
+        Most budgeting apps fail on the second week, when logging every coffee starts to feel
+        like work. This one is built to keep the typing down, so the numbers are still accurate
+        at the end of the month.
+      </p>
+
+      <ol class="steps">
+        <li>
+          <strong>Open it and start</strong>
+          <span>
+            There's no account and nothing to sign up for. A starter Cash account and a set of
+            common categories are ready on first launch.
+          </span>
+        </li>
+        <li>
+          <strong>Add your accounts</strong>
+          <span>
+            Cash, bank, cards, wallets and savings, each with its own live balance. Moving money
+            between them is a transfer, so it isn't counted as spending or income.
+          </span>
+        </li>
+        <li>
+          <strong>Set a budget</strong>
+          <span>
+            Enter a monthly budget, plus an expected income if you want one. The summary card
+            shows where you stand and warns you before you overspend.
+          </span>
+        </li>
+        <li>
+          <strong>Log as you go</strong>
+          <span>
+            Type it in on the keypad, scan a receipt, or turn on notification import and confirm
+            the drafts. Rent, EMIs and subscriptions only need setting up once, as recurring
+            transactions.
+          </span>
+        </li>
+        <li>
+          <strong>Review the month</strong>
+          <span>
+            Filter by day, week, month, year or a custom range. The category pie chart and
+            top-spend breakdown show where the money went.
+          </span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container container-narrow">
+      <div class="section-label">What it does</div>
+      <h2 class="section-title">A money manager that stays on your phone</h2>
+      <p class="section-lead">
+        Everything you'd expect from a budget app, without handing your financial data to anyone.
+      </p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mt-2">
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Expense &amp; income tabs</h3>
+            <p>Separate tabs, each with a live summary card. Amounts are colour-coded red for expense, green for income and blue for transfer.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Budget planner</h3>
+            <p>Set a monthly budget and get a heads-up before you overspend. Add an expected income to track against as well.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Multiple accounts</h3>
+            <p>Cash, bank, cards, wallets and savings, with live balances and transfers between them.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Recurring transactions</h3>
+            <p>Rent, bills, EMIs and subscriptions, with an optional reminder before each one falls due.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Receipt scanning</h3>
+            <p>On-device text recognition reads a receipt photo and prefills the amount and date for you to check.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Notification import</h3>
+            <p>Optional. Payment notifications from bank and UPI apps become drafts on your phone, and you confirm each one.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Encrypted and locked</h3>
+            <p>Transactions live in an encrypted local database. Add a PIN and fingerprint unlock if you want them.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Backup you control</h3>
+            <p>A password-protected backup file saved wherever you choose, which you can restore on a new phone.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>See the big picture</h3>
+            <p>A category pie chart and top-spend breakdown, plus light, dark or system theme.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section bg-white">
+    <div class="container container-narrow">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Questions worth asking first</h2>
+
+      <div class="accordion faq mt-4">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">Is there an expense tracker that works without internet?</button>
+          </h3>
+          <div id="faq-1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes. Expense Tracker &amp; Budget works fully offline. Tracking, budgets, receipt scanning, bill reminders and backup all run on your phone, and the internet is used only to show ads.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">Do I need to create an account?</button>
+          </h3>
+          <div id="faq-2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            No. There's no sign-up, no login and no cloud sync. Open the app and start adding
+            transactions.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">Where is my financial data stored?</button>
+          </h3>
+          <div id="faq-3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Only on your phone, in an encrypted database. The encryption key is generated on first
+            launch and held by the Android Keystore, so the database file can't be read on its own.
+            For an extra layer, turn on the app lock with a PIN and fingerprint unlock.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">Does the app read my SMS messages?</button>
+          </h3>
+          <div id="faq-4" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            No. The app doesn't ask for SMS access at all. If you turn it on, it can read
+            the payment notifications your bank and UPI apps post. These are processed on your
+            phone and turned into drafts, and nothing is saved until you confirm it. As you confirm
+            drafts, it learns which category and account you use for each merchant. Notification
+            access is granted in Android settings, and you can revoke it at any time.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">How do I move my data to a new phone?</button>
+          </h3>
+          <div id="faq-5" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Create a backup from Settings. It's a password-protected file saved wherever you pick
+            in the system file picker. On the new phone, install the app and restore that file with
+            the same password. The app itself never uploads anything. Your data is removed with
+            the app, so back up before you uninstall.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">Does receipt scanning work offline?</button>
+          </h3>
+          <div id="faq-6" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes. Text recognition runs entirely on the device, so a receipt photo never leaves
+            your phone. The amount and date it finds are prefilled into a new transaction for you
+            to check before saving.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">Can I track bank accounts, cards and cash separately?</button>
+          </h3>
+          <div id="faq-7" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes. Add as many accounts as you use: cash, bank, credit cards, wallets or savings.
+            Each keeps its own live balance. Moving money between two of your accounts is recorded
+            as a transfer, so it doesn't inflate your spending or income.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-8" aria-expanded="false" aria-controls="faq-8">Can it remind me about upcoming bills?</button>
+          </h3>
+          <div id="faq-8" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes. Set rent, bills, EMIs or subscriptions up as recurring transactions and choose how
+            many days before each one falls due you want a reminder.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-9" aria-expanded="false" aria-controls="faq-9">Is it free?</button>
+          </h3>
+          <div id="faq-9" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes, it's free and supported by ads, with no in-app purchases. Ads use your device's
+            advertising ID. Your transactions, accounts and budgets are never collected or shared.
+            The <a href="privacy-policy.html">privacy policy</a> has the details.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-10" aria-expanded="false" aria-controls="faq-10">Which phones does it run on?</button>
+          </h3>
+          <div id="faq-10" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Any phone running Android 8.0 or later.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-11" aria-expanded="false" aria-controls="faq-11">Do I have to link my bank account?</button>
+          </h3>
+          <div id="faq-11" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            No. You never enter bank logins or card numbers. Add transactions yourself on the keypad, scan a receipt, or optionally let the app read the payment notifications your bank and UPI apps already post on your phone.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="more-apps" class="section bg-shelf">
+    <div class="container container-narrow">
+      <div class="section-label">More from NITCART</div>
+      <h2 class="section-title">Other apps you might like</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-3 mt-2">
+        <div class="col">
+          <a class="mini-app h-100 theme-dashcam" href="/dashcam/">
+            <img src="/dashcam/playstore/icon-512.png" width="52" height="52" loading="lazy" alt="" />
+            <div>
+              <h3>DashCam - Drive Recorder</h3>
+              <p>Use your phone as a dash cam, with loop recording, impact detection and GPS on the video.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="mini-app h-100 theme-screen-off-recorder" href="/screen-off-recorder/">
+            <img src="/screen-off-recorder/playstore/icon-512.png" width="52" height="52" loading="lazy" alt="" />
+            <div>
+              <h3>Screen Off Recorder</h3>
+              <p>Record video with the screen off, in the background, up to Full HD and with no time limit.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="section cta-band">
+    <div class="container container-narrow">
+      <h2 class="section-title">Start with this month</h2>
+      <p>Free on Google Play. No account, no sign-up, and your financial data stays on your phone.</p>
+      <a class="btn btn-accent btn-cta btn-glow rounded-pill" href="https://play.google.com/store/apps/details?id=com.nitcart.expensetracker" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="NITCART apps">
+        <a href="/dashcam/">DashCam</a>
+        <a href="/screen-off-recorder/">Screen Off Recorder</a>
+        <a href="/expense-tracker/">Expense Tracker &amp; Budget</a>
+      </nav>
+      <p>
+        &copy; 2026 <span class="brand">NITCART</span> &nbsp;·&nbsp;
+        <a href="/">All apps</a> &nbsp;·&nbsp;
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apps.nitcart.com/#organization",
+        "name": "NITCART",
+        "url": "https://apps.nitcart.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://apps.nitcart.com/assets/nitcart-logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "email": "appsupport@nitcart.com",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=NITCART"
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://apps.nitcart.com/expense-tracker/#app",
+        "name": "Expense Tracker & Budget",
+        "alternateName": [
+          "Expense Tracker",
+          "Budget & Expense Tracker"
+        ],
+        "description": "Private, offline expense tracker and budget planner for Android. Track spending, set a budget, scan receipts, get bill reminders. No account, encrypted on your phone.",
+        "url": "https://apps.nitcart.com/expense-tracker/",
+        "image": "https://apps.nitcart.com/expense-tracker/playstore/icon-512.png",
+        "screenshot": [
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-1-expense.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-2-income.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-3-review.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-4-add.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-5-settings.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-6-categories.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-7-category-detail.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-8-notification.webp",
+          "https://apps.nitcart.com/expense-tracker/playstore/screenshots/store-9-notification-entry.webp"
+        ],
+        "operatingSystem": "Android 8.0 or later",
+        "applicationCategory": "FinanceApplication",
+        "inLanguage": [
+          "en"
+        ],
+        "featureList": [
+          "Separate expense and income tracking with live summary cards",
+          "Monthly budget with a heads-up before you overspend",
+          "Multiple accounts with transfers between them",
+          "Custom income and expense categories",
+          "Recurring transactions with bill reminders",
+          "On-device receipt scanning",
+          "Optional import from bank and UPI app notifications",
+          "Encrypted local database with PIN and fingerprint lock",
+          "Password-protected backup and restore",
+          "Works offline with no account"
+        ],
+        "installUrl": "https://play.google.com/store/apps/details?id=com.nitcart.expensetracker",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.nitcart.expensetracker",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.nitcart.expensetracker"
+        ],
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "url": "https://play.google.com/store/apps/details?id=com.nitcart.expensetracker"
+        },
+        "author": {
+          "@id": "https://apps.nitcart.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://apps.nitcart.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://apps.nitcart.com/expense-tracker/#webpage",
+        "url": "https://apps.nitcart.com/expense-tracker/",
+        "name": "Expense Tracker & Budget — Private, Offline Money Manager for Android",
+        "description": "Private, offline expense tracker and budget planner for Android. Track spending, set a budget, scan receipts, get bill reminders. No account, encrypted on your phone.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://apps.nitcart.com/#website"
+        },
+        "about": {
+          "@id": "https://apps.nitcart.com/expense-tracker/#app"
+        },
+        "primaryImageOfPage": "https://apps.nitcart.com/assets/og/expense-tracker.png",
+        "breadcrumb": {
+          "@id": "https://apps.nitcart.com/expense-tracker/#breadcrumb"
+        },
+        "dateModified": "2026-09-23"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://apps.nitcart.com/expense-tracker/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "NITCART Apps",
+            "item": "https://apps.nitcart.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Expense Tracker & Budget",
+            "item": "https://apps.nitcart.com/expense-tracker/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://apps.nitcart.com/expense-tracker/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is there an expense tracker that works without internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Expense Tracker & Budget works fully offline. Tracking, budgets, receipt scanning, bill reminders and backup all run on your phone, and the internet is used only to show ads."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to create an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There's no sign-up, no login and no cloud sync. Open the app and start adding transactions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my financial data stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only on your phone, in an encrypted database. The encryption key is generated on first launch and held by the Android Keystore, so the database file can't be read on its own. For an extra layer, turn on the app lock with a PIN and fingerprint unlock."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the app read my SMS messages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The app doesn't ask for SMS access at all. If you turn it on, it can read the payment notifications your bank and UPI apps post. These are processed on your phone and turned into drafts, and nothing is saved until you confirm it. As you confirm drafts, it learns which category and account you use for each merchant. Notification access is granted in Android settings, and you can revoke it at any time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I move my data to a new phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Create a backup from Settings. It's a password-protected file saved wherever you pick in the system file picker. On the new phone, install the app and restore that file with the same password. The app itself never uploads anything. Your data is removed with the app, so back up before you uninstall."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does receipt scanning work offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Text recognition runs entirely on the device, so a receipt photo never leaves your phone. The amount and date it finds are prefilled into a new transaction for you to check before saving."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I track bank accounts, cards and cash separately?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Add as many accounts as you use: cash, bank, credit cards, wallets or savings. Each keeps its own live balance. Moving money between two of your accounts is recorded as a transfer, so it doesn't inflate your spending or income."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it remind me about upcoming bills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Set rent, bills, EMIs or subscriptions up as recurring transactions and choose how many days before each one falls due you want a reminder."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it's free and supported by ads, with no in-app purchases. Ads use your device's advertising ID. Your transactions, accounts and budgets are never collected or shared. The privacy policy has the details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which phones does it run on?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any phone running Android 8.0 or later."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to link my bank account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You never enter bank logins or card numbers. Add transactions yourself on the keypad, scan a receipt, or optionally let the app read the payment notifications your bank and UPI apps already post on your phone."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    // Close the collapsed mobile menu after a link is tapped.
+    document.querySelectorAll(".site-nav .nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var menu = document.getElementById("nav-menu");
+        if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

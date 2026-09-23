@@ -1,224 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-expense-tracker">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Expense Tracker</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <title>Expense Tracker &amp; Budget Privacy Policy | NITCART</title>
+  <meta name="description" content="Privacy policy for Expense Tracker &amp; Budget for Android. Transactions, accounts and budgets stay in an encrypted database on your phone; only Google AdMob ads use the network." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://apps.nitcart.com/expense-tracker/privacy-policy.html" />
+  <meta name="theme-color" content="#10292e" />
+  <link rel="icon" href="playstore/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="playstore/icon-512.png" />
 
-    :root {
-      --navy: #0f1a2e;
-      --navy-mid: #16213e;
-      --red: #e53935;
-      --red-dark: #b71c1c;
-      --white: #ffffff;
-      --text: #1a1a2e;
-      --text-mute: #5a6275;
-      --bg: #f0f2f7;
-      --card: #ffffff;
-      --border: #e2e6ef;
-    }
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NITCART Apps" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Expense Tracker & Budget Privacy Policy" />
+  <meta property="og:description" content="Privacy policy for Expense Tracker &amp; Budget for Android. Transactions, accounts and budgets stay in an encrypted database on your phone; only Google AdMob ads use the network." />
+  <meta property="og:url" content="https://apps.nitcart.com/expense-tracker/privacy-policy.html" />
+  <meta property="og:image" content="https://apps.nitcart.com/assets/og/expense-tracker.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Expense Tracker & Budget privacy policy" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Expense Tracker & Budget Privacy Policy" />
+  <meta name="twitter:description" content="Privacy policy for Expense Tracker &amp; Budget for Android. Transactions, accounts and budgets stay in an encrypted database on your phone; only Google AdMob ads use the network." />
+  <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/expense-tracker.png" />
+  <meta name="twitter:image:alt" content="Expense Tracker & Budget privacy policy" />
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 52px 24px 44px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(229, 57, 53, 0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .header-logo {
-      width: 88px;
-      height: 88px;
-      border-radius: 22px;
-      border: 3px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 6px rgba(229, 57, 53, 0.15);
-      margin: 0 auto 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06));
-    }
-
-    header h1 {
-      font-size: 1.9rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    .header-app-name {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--red);
-      letter-spacing: 0.3px;
-      margin-bottom: 6px;
-    }
-
-    header .date {
-      font-size: 0.82rem;
-      opacity: 0.6;
-    }
-
-    .accent-bar {
-      height: 4px;
-      background: linear-gradient(90deg, var(--navy-mid) 0%, var(--red) 50%, var(--navy-mid) 100%);
-    }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 64px;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      box-shadow: 0 2px 16px rgba(15, 26, 46, 0.08);
-      padding: 30px 34px;
-      margin-bottom: 20px;
-      border-left: 4px solid transparent;
-      transition: border-color 0.2s;
-    }
-
-    .card:hover {
-      border-left-color: var(--red);
-    }
-
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    h2::before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--red);
-      flex-shrink: 0;
-    }
-
-    p {
-      margin-bottom: 12px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin: 8px 0 12px 22px;
-    }
-
-    ul li {
-      margin-bottom: 6px;
-    }
-
-    code {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-      font-size: 0.82em;
-      background: #eef0f6;
-      color: var(--navy);
-      padding: 1px 6px;
-      border-radius: 4px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 6px;
-      padding: 3px 9px;
-      font-size: 0.74rem;
-      font-weight: 700;
-      margin-right: 4px;
-      margin-bottom: 4px;
-      letter-spacing: 0.4px;
-      vertical-align: middle;
-    }
-
-    .highlight-box {
-      background: rgba(229, 57, 53, 0.06);
-      border-left: 4px solid var(--red);
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 14px 0;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .highlight-box strong {
-      color: var(--red-dark);
-    }
-
-    a {
-      color: var(--red-dark);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background: var(--navy);
-      color: rgba(255, 255, 255, 0.45);
-      text-align: center;
-      font-size: 0.8rem;
-      padding: 20px 24px;
-    }
-
-    footer span {
-      color: var(--red);
-    }
-  </style>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/nitcart.css" />
 </head>
 <body>
-  <header>
-    <img class="header-logo" src="playstore/icon-512.png" alt="Expense Tracker icon" />
-    <div class="header-app-name">Expense Tracker</div>
-    <h1>Privacy Policy</h1>
-    <div class="date">Last updated: 20 July 2026</div>
+  <nav class="navbar navbar-expand sticky-top site-nav policy-nav" data-bs-theme="dark">
+    <div class="container-fluid px-3 px-lg-4">
+      <a href="/" class="navbar-brand">NIT<span>CART</span></a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./">Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">All apps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero policy-hero">
+    <div class="container">
+      <img class="hero-icon" src="playstore/icon-512.png" width="88" height="88" alt="Expense Tracker icon" />
+      <div class="policy-app">Expense Tracker</div>
+      <h1>Privacy Policy</h1>
+      <div class="policy-date">Last updated: 23 September 2026</div>
+    </div>
   </header>
 
   <div class="accent-bar"></div>
 
-  <main>
-    <div class="card">
+  <main class="policy-body">
+    <div class="container">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Overview</h2>
       <p>
         Expense Tracker (the “App”, package <code>com.nitcart.expensetracker</code>) is a personal finance app designed to help you manage transactions, budgets, accounts, and categories on your device.
@@ -227,16 +65,18 @@
         <strong>Short version:</strong> Your financial information &mdash; transactions, accounts, budgets &mdash; stays on your phone and is never sent to the developer or to third-party servers. The App is free and supported by ads (Google AdMob), which use a device advertising identifier.
       </div>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Permissions &amp; Data Access</h2>
 
-      <p><span class="badge">CAMERA</span></p>
+      <p><span class="badge perm-badge">CAMERA</span></p>
       <p>
         Used only when you choose to scan a receipt. Text recognition runs on-device and the photo is not uploaded.
       </p>
 
-      <p><span class="badge">NOTIFICATIONS</span></p>
+      <p><span class="badge perm-badge">NOTIFICATIONS</span></p>
       <p>
         Used to show recurring-bill reminders and import notifications. Optionally, you can grant notification access so the App reads your bank and UPI <strong>app</strong> transaction alerts to create draft expenses for your review &mdash; this is off by default.
       </p>
@@ -244,18 +84,20 @@
         <strong>Processed only on your device.</strong> Any notification content used for auto-import is read and parsed on your phone. Nothing is uploaded, sold, or shared, and you can turn this off at any time.
       </div>
 
-      <p><span class="badge">BIOMETRIC</span></p>
+      <p><span class="badge perm-badge">BIOMETRIC</span></p>
       <p>
         Used only if you turn on app lock to protect access to the App.
       </p>
 
-      <p><span class="badge">INTERNET</span></p>
+      <p><span class="badge perm-badge">INTERNET</span></p>
       <p>
         Used to serve ads (see &ldquo;Advertising&rdquo; below). The App&rsquo;s own features &mdash; tracking, budgets, receipt scanning, backup and any import &mdash; work fully offline; the network is used only by the ad component, and none of your transactions, accounts or budgets are ever transmitted.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Stored on Your Device</h2>
       <ul>
         <li>
@@ -269,8 +111,10 @@
         </li>
       </ul>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Transmission</h2>
       <p>
         The App does not have its own account system or backend. It does not collect, transmit, sell, or share your personal or financial information &mdash; your transactions, accounts, categories and budgets &mdash; to the developer or any third party.
@@ -279,9 +123,11 @@
         Receipt scanning and any notification-based import are handled on your device, and none of that content is uploaded as part of normal App use. The only data that leaves your device is what the ad component (Google AdMob) needs to serve ads &mdash; see &ldquo;Advertising&rdquo; below. Backup files you create go only where you choose to save them (see &ldquo;Backup &amp; restore&rdquo;).
       </p>
     </div>
+    </section>
 
-    <div class="card">
-      <h2>Backup &amp; restore <span class="badge">OPTIONAL</span></h2>
+    <section class="card policy-card">
+      <div class="card-body">
+      <h2>Backup &amp; restore <span class="badge perm-badge">OPTIONAL</span></h2>
       <p>
         The App can save a backup of your data to a file. The App itself does not upload anything and has no cloud account: when you tap Back up, your device&rsquo;s file picker asks where to save it, and the file goes only where you choose &mdash; on the device, or to any storage service you have installed.
       </p>
@@ -300,8 +146,10 @@
         <strong>Restoring replaces everything.</strong> Restoring a backup deletes the data currently on your device and replaces it with the file&rsquo;s contents. This cannot be undone.
       </div>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Advertising</h2>
       <p>
         The App is free and supported by ads served through <strong>Google AdMob</strong> (Google LLC). To show ads, the Google Mobile Ads SDK may access and share a device <strong>advertising identifier</strong> and limited device/technical information (such as general location derived from IP, and ad-interaction data) with Google, in line with
@@ -311,38 +159,129 @@
         The App itself does not use analytics services and does not send your financial data to advertisers. You can reset or limit ad personalisation from your device&rsquo;s <em>Settings &rarr; Privacy &rarr; Ads</em>.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Children’s Privacy</h2>
       <p>
         The App is not directed to children under the age of 13. The developer does not knowingly collect personal information from children.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Retention &amp; Deletion</h2>
       <p>
         Your data remains on your device. If you uninstall the App or clear its data, the local information stored by the App is removed from the device. You can also export your data at any time.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Changes to This Policy</h2>
       <p>
         This policy may be updated from time to time. The “Last updated” date at the top of this page will reflect any changes. Continued use of the App after an update means you accept the revised policy.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Contact</h2>
       <p>
-        Questions about this privacy policy can be sent to <a href="mailto:appsupports@nitcart.com">appsupports@nitcart.com</a>.
+        Questions about this privacy policy can be sent to <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>.
       </p>
+    </div>
+    </section>
     </div>
   </main>
 
-  <footer>
-    <span>Expense Tracker</span> · Privacy Policy
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="NITCART apps">
+        <a href="/dashcam/">DashCam</a>
+        <a href="/screen-off-recorder/">Screen Off Recorder</a>
+        <a href="/expense-tracker/">Expense Tracker &amp; Budget</a>
+      </nav>
+      <p>
+        &copy; 2026 <span class="brand">NITCART</span> &nbsp;·&nbsp;
+        <a href="/">All apps</a> &nbsp;·&nbsp;
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
   </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apps.nitcart.com/#organization",
+        "name": "NITCART",
+        "url": "https://apps.nitcart.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://apps.nitcart.com/assets/nitcart-logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "email": "appsupport@nitcart.com",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=NITCART"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://apps.nitcart.com/expense-tracker/privacy-policy.html#webpage",
+        "url": "https://apps.nitcart.com/expense-tracker/privacy-policy.html",
+        "name": "Expense Tracker & Budget Privacy Policy | NITCART",
+        "description": "Privacy policy for Expense Tracker & Budget for Android. Transactions, accounts and budgets stay in an encrypted database on your phone; only Google AdMob ads use the network.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://apps.nitcart.com/#website"
+        },
+        "about": {
+          "@id": "https://apps.nitcart.com/expense-tracker/#app"
+        },
+        "publisher": {
+          "@id": "https://apps.nitcart.com/#organization"
+        },
+        "dateModified": "2026-09-23",
+        "breadcrumb": {
+          "@id": "https://apps.nitcart.com/expense-tracker/privacy-policy.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://apps.nitcart.com/expense-tracker/privacy-policy.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "NITCART Apps",
+            "item": "https://apps.nitcart.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Expense Tracker & Budget",
+            "item": "https://apps.nitcart.com/expense-tracker/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Privacy Policy",
+            "item": "https://apps.nitcart.com/expense-tracker/privacy-policy.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
 </body>
 </html>

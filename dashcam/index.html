@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dashcam">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashCam — Dash Cam App for Android with Loop Recording &amp; GPS</title>
+  <meta name="description" content="Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, and speed and GPS on the video. Free, no account, stays on your phone." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://apps.nitcart.com/dashcam/" />
+  <meta name="theme-color" content="#0b1d3a" />
+  <link rel="icon" href="playstore/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="playstore/icon-512.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NITCART Apps" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="DashCam — Use Your Android Phone as a Dash Cam" />
+  <meta property="og:description" content="Loop recording, impact detection, and speed &amp; GPS burned into every frame. Free, no account, and your footage never leaves the phone." />
+  <meta property="og:url" content="https://apps.nitcart.com/dashcam/" />
+  <meta property="og:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DashCam - Drive Recorder for Android by NITCART" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DashCam — Use Your Android Phone as a Dash Cam" />
+  <meta name="twitter:description" content="Loop recording, impact detection, and speed &amp; GPS burned into every frame. Free, no account, and your footage never leaves the phone." />
+  <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
+  <meta name="twitter:image:alt" content="DashCam - Drive Recorder for Android by NITCART" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/nitcart.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md sticky-top site-nav" data-bs-theme="dark">
+    <div class="container-fluid px-3 px-lg-4">
+      <a href="/" class="navbar-brand">NIT<span>CART</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#screens">Screens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <img class="hero-icon" src="playstore/icon-512.png" width="96" height="96" fetchpriority="high" alt="DashCam app icon" />
+      <h1 class="hero-title">Use the phone you already own<br /><span>as a dash cam.</span></h1>
+      <p class="hero-lead">
+        DashCam loop-records your drive, keeps the clip that matters, and burns the time, speed
+        and GPS coordinates into the video itself. No extra hardware, no account, and nothing
+        uploaded anywhere.
+      </p>
+      <a class="btn btn-accent btn-cta btn-glow rounded-pill" href="https://play.google.com/store/apps/details?id=com.nitcart.dashcam" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </section>
+
+  <div class="accent-bar"></div>
+
+  <section id="facts" class="facts" aria-labelledby="facts-title">
+    <div class="container container-narrow">
+      <div class="section-label">At a glance</div>
+      <h2 id="facts-title" class="visually-hidden">DashCam at a glance</h2>
+      <dl class="facts-grid">
+        <div class="fact"><dt>Price</dt><dd>Free, with ads</dd></div>
+        <div class="fact"><dt>In-app purchases</dt><dd>None</dd></div>
+        <div class="fact"><dt>Requires</dt><dd>Android 7.0+</dd></div>
+        <div class="fact"><dt>Account</dt><dd>Not needed</dd></div>
+        <div class="fact"><dt>Works offline</dt><dd>Yes</dd></div>
+        <div class="fact"><dt>Your footage</dt><dd>Stays on the phone</dd></div>
+        <div class="fact"><dt>Languages</dt><dd>30</dd></div>
+        <div class="fact"><dt>Parking mode</dt><dd>Not available</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="screens" class="section">
+    <div class="container container-narrow">
+      <div class="section-label">Screenshots</div>
+      <h2 class="section-title">What it looks like on the road</h2>
+
+      <div id="shots" class="carousel slide shot-carousel mt-4" data-bs-ride="carousel" data-bs-interval="5000" aria-roledescription="carousel" aria-label="DashCam screenshots">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-0 align-items-center shot shot-wide" role="group" aria-roledescription="slide" aria-label="1 of 8">
+              <div class="col-12 shot-media"><img src="playstore/screenshots/store-1-recording.webp" width="1200" height="675" alt="DashCam recording the road ahead, with date, time and speed burned into the frame" /></div>
+              <div class="col-12">
+                <div class="shot-body">
+                  <div class="shot-count">01 / 08</div>
+                  <h3>Your phone is already a dash cam</h3>
+                  <p>Mount it facing the road, tap Record and drive. Date, time and speed are burned into every frame of the recorded video, not just drawn on the preview.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="2 of 8">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-2-clips.webp" width="540" height="960" alt="Clips screen listing recorded drive segments with thumbnails" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">02 / 08</div>
+                  <h3>It never runs out of space</h3>
+                  <p>Footage is written in short segments inside a storage budget you set. When the budget is full, the oldest clip makes room for the newest, and incident clips are kept out of the loop for good.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="3 of 8">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-3-settings.webp" width="540" height="960" alt="Camera, resolution and segment length settings" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">03 / 08</div>
+                  <h3>Set it up the way you drive</h3>
+                  <p>Front or back camera, the widest lens on the phone, resolution, segment length, orientation and audio. Everything is on one Settings screen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="4 of 8">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-4-overlay.webp" width="540" height="960" alt="Video overlay settings for timestamp, speed, GPS coordinates and position" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">04 / 08</div>
+                  <h3>Every overlay is optional</h3>
+                  <p>Switch the timestamp, speed and GPS coordinates on or off individually. You can also pick the date format, km/h or mph, and which edge of the frame the line sits on.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="5 of 8">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-5-automation.webp" width="540" height="960" alt="Automation settings to start recording on charger, Bluetooth or boot" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">05 / 08</div>
+                  <h3>It starts itself when you drive</h3>
+                  <p>Recording can begin when the car charger connects, when your stereo pairs over Bluetooth, or after the phone boots. It stops when you unplug.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot shot-wide" role="group" aria-roledescription="slide" aria-label="6 of 8">
+              <div class="col-12 shot-media"><img src="playstore/screenshots/store-6-floating.webp" width="1200" height="675" alt="Floating DashCam preview window over a navigation map" /></div>
+              <div class="col-12">
+                <div class="shot-body">
+                  <div class="shot-count">06 / 08</div>
+                  <h3>Keeps recording while you navigate</h3>
+                  <p>A small draggable preview floats over Maps, so you can check the recording and stop it without switching apps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot shot-wide" role="group" aria-roledescription="slide" aria-label="7 of 8">
+              <div class="col-12 shot-media"><img src="playstore/screenshots/store-7-screenoff.webp" width="1200" height="675" alt="Phone with the screen off while DashCam keeps recording" /></div>
+              <div class="col-12">
+                <div class="shot-body">
+                  <div class="shot-count">07 / 08</div>
+                  <h3>Record with the screen switched off</h3>
+                  <p>The camera runs in a foreground service rather than on the app screen, so locking the phone doesn't end the session. While it runs, a notification with a Stop button stays visible.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0 align-items-center shot" role="group" aria-roledescription="slide" aria-label="8 of 8">
+              <div class="col-md-6 shot-media"><img src="playstore/screenshots/store-8-language.webp" width="540" height="960" alt="Language picker listing the app's 30 languages" /></div>
+              <div class="col-md-6">
+                <div class="shot-body">
+                  <div class="shot-count">08 / 08</div>
+                  <h3>Speaks 30 languages, including yours</h3>
+                  <p>Hindi, Bengali, Tamil, Spanish, Arabic and 25 more. Pick one in Settings, whatever language the phone itself is set to.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot-controls">
+          <button type="button" class="shot-btn" data-bs-target="#shots" data-bs-slide="prev" aria-label="Previous screenshot"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Screenshot 1"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="1" aria-label="Screenshot 2"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="2" aria-label="Screenshot 3"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="3" aria-label="Screenshot 4"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="4" aria-label="Screenshot 5"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="5" aria-label="Screenshot 6"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="6" aria-label="Screenshot 7"></button>
+            <button type="button" data-bs-target="#shots" data-bs-slide-to="7" aria-label="Screenshot 8"></button>
+          </div>
+          <button type="button" class="shot-btn" data-bs-target="#shots" data-bs-slide="next" aria-label="Next screenshot"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section bg-white">
+    <div class="container container-narrow">
+      <div class="section-label">Setup</div>
+      <h2 class="section-title">How to set up an Android phone as a dash cam</h2>
+      <p class="section-lead">
+        An old phone makes a genuinely good dash cam. It already has the camera, the GPS, the
+        accelerometer and the storage that a purpose-built unit charges you for. What it does
+        not have out of the box is loop recording, impact detection, or a camera that keeps
+        running with the screen off — which is the part DashCam adds.
+      </p>
+
+      <ol class="steps">
+        <li>
+          <strong>Mount the phone facing the road</strong>
+          <span>
+            A suction or vent mount at windscreen height, camera pointing forward. Landscape
+            gives you more of the road per frame; portrait gives you more of the lane ahead.
+            Both are supported, and the orientation can be pinned so a bump does not rotate it.
+          </span>
+        </li>
+        <li>
+          <strong>Give it power</strong>
+          <span>
+            Recording video with GPS running will outpace the battery on a long drive, so run a
+            cable from the car's USB socket. DashCam can start recording the moment that charger
+            connects and stop when you unplug, which means the dash cam turns itself on with the
+            car.
+          </span>
+        </li>
+        <li>
+          <strong>Set a storage budget</strong>
+          <span>
+            Tell the app how much space it may use. It writes in short segments and, once the
+            budget is full, the oldest clip makes room for the newest — so it runs every day
+            without ever needing to be cleared out. The space is reserved up front, so another
+            app cannot take it mid-drive.
+          </span>
+        </li>
+        <li>
+          <strong>Turn on the overlay you want burned in</strong>
+          <span>
+            Date, time, speed and GPS coordinates can be written into the video file itself
+            rather than drawn over the preview. This is what makes phone footage read as dash
+            cam footage: the data is in the picture, not in a sidecar file that gets lost.
+          </span>
+        </li>
+        <li>
+          <strong>Tap Record and put the phone down</strong>
+          <span>
+            The camera keeps running with the screen off, and carries on while you use Maps or
+            take a call. If the G-sensor detects an impact, that clip and the one before it are
+            moved out of the loop and never deleted.
+          </span>
+        </li>
+      </ol>
+
+      <div class="note">
+        <strong>Auto-start on Android 14 and later.</strong> From Android 14, an app cannot start
+        a camera service from the background. Granting DashCam "Display over other apps" is what
+        lets the charger and Bluetooth triggers work completely hands-free. Without it you get a
+        single "tap to start" notification instead — one tap, but it always works.
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container container-narrow">
+      <div class="section-label">What it does</div>
+      <h2 class="section-title">Built around the clip you actually need</h2>
+      <p class="section-lead">
+        Most of a dash cam's footage is worthless and one clip of it is not. Everything here is
+        arranged around making sure the app is still holding that one clip weeks later.
+      </p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mt-2">
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Loop recording</h3>
+            <p>Short segments inside a budget you set. Oldest deleted first, so it never fills the phone and never stops for lack of space.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Impact detection</h3>
+            <p>The G-sensor measures deviation from a gravity baseline, so it is not fooled by mount angle. A knock saves the clip and the run-up to it.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Incidents are never deleted</h3>
+            <p>Protected clips are held out of the loop permanently — not overwritten to make room, not trimmed under storage pressure.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Records with the screen off</h3>
+            <p>The camera is bound to a foreground service, not to the UI, so the session survives the screen turning off and app switching.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Speed and GPS in the frame</h3>
+            <p>Burned into the recorded file per frame, not overlaid on the preview. Choose which fields show, which edge, and km/h or mph.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Hands-free start</h3>
+            <p>Begin recording when the car charger connects, when your stereo pairs over Bluetooth, or after the phone finishes booting.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Floating preview</h3>
+            <p>A small draggable window so you can see and stop the recording without leaving Maps.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Works with no signal</h3>
+            <p>Recording, retention, overlays and playback are entirely on-device. A tunnel or a dead zone changes nothing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section bg-white">
+    <div class="container container-narrow">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Questions worth asking first</h2>
+
+      <div class="accordion faq mt-4">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">How do I use my Android phone as a dash cam?</button>
+          </h3>
+          <div id="faq-1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Install DashCam, mount the phone on the windscreen facing the road, plug it into the car charger, set a storage budget in Settings and tap Record. You can also have recording start by itself when the charger connects, when the car stereo pairs over Bluetooth, or after the phone boots. The setup guide above covers each step.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">Is a phone actually good enough to use as a dash cam?</button>
+          </h3>
+          <div id="faq-2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            For image quality, usually yes — a phone from the last several years will out-resolve
+            a cheap dedicated unit. The real differences are heat and field of view. A phone in
+            direct sun on a dashboard gets hot, and a phone lens is narrower than the wide-angle
+            glass on a purpose-built dash cam, so you capture less of the adjacent lanes. DashCam
+            picks the widest lens your phone has, which helps but does not fully close that gap.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">Does it keep recording when the screen is off?</button>
+          </h3>
+          <div id="faq-3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes. The camera is bound to a foreground service rather than to the app's UI, with a
+            wake lock held for the session, so recording continues with the screen off and while
+            you are in another app. An ongoing notification with a Stop action is visible the whole
+            time it is running.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">Will it fill up my phone's storage?</button>
+          </h3>
+          <div id="faq-4" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            No. You set a storage budget and the app stays inside it: once full, the oldest clip is
+            deleted to make room for the newest. The space is also reserved from the moment you set
+            it, so another app cannot claim it while you are driving. Incident clips are exempt from
+            the loop and get their own ceiling so they cannot swallow the whole budget either.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">What happens in an accident?</button>
+          </h3>
+          <div id="faq-5" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            The accelerometer compares movement against a low-pass gravity baseline, so mount angle
+            and slow tilting do not trigger it but a sharp impact does. On a trigger, the previous
+            segment is moved to protected storage immediately and the in-flight one is flagged and
+            moved as soon as the encoder releases it — the run-up to an incident is usually the part
+            that shows what happened. You can also tap Incident yourself, either during a drive or
+            before setting off to protect the whole of the next one.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">Does my footage get uploaded anywhere?</button>
+          </h3>
+          <div id="faq-6" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            No. There is no account, no server and no cloud sync. Video, audio and location are
+            processed on the device to produce the recording and its burned-in overlay, and none of
+            them are transmitted. The app does hold the internet permission, because it shows ads —
+            but the ad code has no access to your recordings, and everything the app records works
+            with no connection at all. The
+            <a href="privacy-policy.html">privacy policy</a> sets out exactly what the ad SDK
+            collects.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">Can it record audio inside the car?</button>
+          </h3>
+          <div id="faq-7" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            It can, and it can be switched off in Settings. Worth checking your local law before you
+            leave it on: rules on recording conversations inside a vehicle, and on filming in public,
+            vary considerably between countries and in some places between regions.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-8" aria-expanded="false" aria-controls="faq-8">Does it have parking mode?</button>
+          </h3>
+          <div id="faq-8" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Not currently. DashCam records while you are driving; it does not monitor the car while
+            it is parked and unattended. Dual front-and-rear capture and cloud upload are also not
+            implemented.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-9" aria-expanded="false" aria-controls="faq-9">What happens to my clips if I uninstall the app?</button>
+          </h3>
+          <div id="faq-9" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            They are deleted. Clips are written to the app's own external files directory, which is
+            why DashCam needs no storage permission at all — but that directory is removed with the
+            app. Export anything you want to keep before uninstalling.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-10" aria-expanded="false" aria-controls="faq-10">Is DashCam free?</button>
+          </h3>
+          <div id="faq-10" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes. DashCam is free on Google Play and supported by ads. There are no in-app purchases and no account to create.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="more-apps" class="section bg-shelf">
+    <div class="container container-narrow">
+      <div class="section-label">More from NITCART</div>
+      <h2 class="section-title">Other apps you might like</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-3 mt-2">
+        <div class="col">
+          <a class="mini-app h-100 theme-screen-off-recorder" href="/screen-off-recorder/">
+            <img src="/screen-off-recorder/playstore/icon-512.png" width="52" height="52" loading="lazy" alt="" />
+            <div>
+              <h3>Screen Off Recorder</h3>
+              <p>Record video with the screen off, in the background, up to Full HD and with no time limit.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="mini-app h-100 theme-expense-tracker" href="/expense-tracker/">
+            <img src="/expense-tracker/playstore/icon-512.png" width="52" height="52" loading="lazy" alt="" />
+            <div>
+              <h3>Expense Tracker &amp; Budget</h3>
+              <p>A private expense tracker and budget planner that works offline and never needs an account.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="section cta-band">
+    <div class="container container-narrow">
+      <h2 class="section-title">Put the old phone in the windscreen</h2>
+      <p>Free on Google Play. No account, no sign-up, and your footage stays on the device.</p>
+      <a class="btn btn-accent btn-cta btn-glow rounded-pill" href="https://play.google.com/store/apps/details?id=com.nitcart.dashcam" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="NITCART apps">
+        <a href="/dashcam/">DashCam</a>
+        <a href="/screen-off-recorder/">Screen Off Recorder</a>
+        <a href="/expense-tracker/">Expense Tracker &amp; Budget</a>
+      </nav>
+      <p>
+        &copy; 2026 <span class="brand">NITCART</span> &nbsp;·&nbsp;
+        <a href="/">All apps</a> &nbsp;·&nbsp;
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apps.nitcart.com/#organization",
+        "name": "NITCART",
+        "url": "https://apps.nitcart.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://apps.nitcart.com/assets/nitcart-logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "email": "appsupport@nitcart.com",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=NITCART"
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://apps.nitcart.com/dashcam/#app",
+        "name": "DashCam - Drive Recorder",
+        "alternateName": [
+          "Dash Cam: Car Video Recorder",
+          "DashCam"
+        ],
+        "description": "Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, and speed and GPS on the video. Free, no account, stays on your phone.",
+        "url": "https://apps.nitcart.com/dashcam/",
+        "image": "https://apps.nitcart.com/dashcam/playstore/icon-512.png",
+        "screenshot": [
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-1-recording.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-2-clips.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-3-settings.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-4-overlay.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-5-automation.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-6-floating.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-7-screenoff.webp",
+          "https://apps.nitcart.com/dashcam/playstore/screenshots/store-8-language.webp"
+        ],
+        "operatingSystem": "Android 7.0 or later",
+        "applicationCategory": "UtilitiesApplication",
+        "inLanguage": [
+          "en",
+          "ar",
+          "as",
+          "bn",
+          "de",
+          "es",
+          "fa",
+          "fr",
+          "gu",
+          "hi",
+          "id",
+          "it",
+          "ja",
+          "kn",
+          "ko",
+          "ml",
+          "mr",
+          "nl",
+          "or",
+          "pa",
+          "pl",
+          "pt",
+          "ru",
+          "ta",
+          "te",
+          "th",
+          "tr",
+          "ur",
+          "vi",
+          "zh"
+        ],
+        "featureList": [
+          "Loop recording inside a storage budget you set",
+          "G-sensor impact detection that protects incident clips",
+          "Date, time, speed and GPS coordinates burned into the video",
+          "Keeps recording with the screen off and in the background",
+          "Hands-free start when the car charger connects, the stereo pairs over Bluetooth, or the phone boots",
+          "Floating preview window over other apps",
+          "Works offline; footage never leaves the device",
+          "Available in 30 languages"
+        ],
+        "installUrl": "https://play.google.com/store/apps/details?id=com.nitcart.dashcam",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.nitcart.dashcam",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.nitcart.dashcam"
+        ],
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "url": "https://play.google.com/store/apps/details?id=com.nitcart.dashcam"
+        },
+        "author": {
+          "@id": "https://apps.nitcart.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://apps.nitcart.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://apps.nitcart.com/dashcam/#webpage",
+        "url": "https://apps.nitcart.com/dashcam/",
+        "name": "DashCam — Dash Cam App for Android with Loop Recording & GPS",
+        "description": "Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, and speed and GPS on the video. Free, no account, stays on your phone.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://apps.nitcart.com/#website"
+        },
+        "about": {
+          "@id": "https://apps.nitcart.com/dashcam/#app"
+        },
+        "primaryImageOfPage": "https://apps.nitcart.com/assets/og/dashcam.png",
+        "breadcrumb": {
+          "@id": "https://apps.nitcart.com/dashcam/#breadcrumb"
+        },
+        "dateModified": "2026-09-23"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://apps.nitcart.com/dashcam/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "NITCART Apps",
+            "item": "https://apps.nitcart.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "DashCam - Drive Recorder",
+            "item": "https://apps.nitcart.com/dashcam/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://apps.nitcart.com/dashcam/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I use my Android phone as a dash cam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Install DashCam, mount the phone on the windscreen facing the road, plug it into the car charger, set a storage budget in Settings and tap Record. You can also have recording start by itself when the charger connects, when the car stereo pairs over Bluetooth, or after the phone boots. The setup guide above covers each step."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a phone actually good enough to use as a dash cam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For image quality, usually yes — a phone from the last several years will out-resolve a cheap dedicated unit. The real differences are heat and field of view. A phone in direct sun on a dashboard gets hot, and a phone lens is narrower than the wide-angle glass on a purpose-built dash cam, so you capture less of the adjacent lanes. DashCam picks the widest lens your phone has, which helps but does not fully close that gap."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it keep recording when the screen is off?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The camera is bound to a foreground service rather than to the app's UI, with a wake lock held for the session, so recording continues with the screen off and while you are in another app. An ongoing notification with a Stop action is visible the whole time it is running."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will it fill up my phone's storage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You set a storage budget and the app stays inside it: once full, the oldest clip is deleted to make room for the newest. The space is also reserved from the moment you set it, so another app cannot claim it while you are driving. Incident clips are exempt from the loop and get their own ceiling so they cannot swallow the whole budget either."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens in an accident?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The accelerometer compares movement against a low-pass gravity baseline, so mount angle and slow tilting do not trigger it but a sharp impact does. On a trigger, the previous segment is moved to protected storage immediately and the in-flight one is flagged and moved as soon as the encoder releases it — the run-up to an incident is usually the part that shows what happened. You can also tap Incident yourself, either during a drive or before setting off to protect the whole of the next one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my footage get uploaded anywhere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no account, no server and no cloud sync. Video, audio and location are processed on the device to produce the recording and its burned-in overlay, and none of them are transmitted. The app does hold the internet permission, because it shows ads — but the ad code has no access to your recordings, and everything the app records works with no connection at all. The privacy policy sets out exactly what the ad SDK collects."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it record audio inside the car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can, and it can be switched off in Settings. Worth checking your local law before you leave it on: rules on recording conversations inside a vehicle, and on filming in public, vary considerably between countries and in some places between regions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it have parking mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not currently. DashCam records while you are driving; it does not monitor the car while it is parked and unattended. Dual front-and-rear capture and cloud upload are also not implemented."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to my clips if I uninstall the app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are deleted. Clips are written to the app's own external files directory, which is why DashCam needs no storage permission at all — but that directory is removed with the app. Export anything you want to keep before uninstalling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is DashCam free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DashCam is free on Google Play and supported by ads. There are no in-app purchases and no account to create."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    // Close the collapsed mobile menu after a link is tapped.
+    document.querySelectorAll(".site-nav .nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var menu = document.getElementById("nav-menu");
+        if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

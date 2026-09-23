@@ -1,0 +1,24 @@
+# NITCART Apps
+
+> NITCART is a software development firm that publishes focused, privacy-first Android apps on Google Play: DashCam (a dash cam app), Screen Off Recorder (records video with the screen off) and Expense Tracker & Budget (an offline expense tracker). None of the apps needs an account, their core features work offline, and user data — recordings, location, finances — stays on the phone. All three are free, supported by Google AdMob ads, with no in-app purchases.
+
+- Website: https://apps.nitcart.com/
+- Google Play developer page: https://play.google.com/store/apps/developer?id=NITCART
+- Support: appsupport@nitcart.com
+
+## Apps
+
+- [DashCam - Drive Recorder](https://apps.nitcart.com/dashcam/): Turns an Android phone into a dash cam. Loop recording inside a storage budget you set, G-sensor impact detection that saves the incident clip and the one before it (incident clips are never deleted by the loop), date, time, speed and GPS coordinates burned into the video, recording that continues with the screen off, hands-free start when the car charger connects, the car stereo pairs over Bluetooth or the phone boots, and a floating preview over Maps. Requires Android 7.0 or later; available in 30 languages. Footage never leaves the device. It has no parking mode, no dual front-and-rear recording and no cloud upload. Google Play: https://play.google.com/store/apps/details?id=com.nitcart.dashcam
+- [Screen Off Recorder](https://apps.nitcart.com/screen-off-recorder/): Records video on Android with the screen off or while other apps are in use. SD, HD or Full HD (1080p), no recording time limit, pause and resume without extra files, long recordings split into segments and merged into one MP4 on stop, optional date/time and location stamp, front or rear camera, audio on or off, save to app storage or a chosen folder, no watermark. Android shows its camera indicator and the app keeps a "Recording in progress" notification visible while recording. Requires Android 6.0 or later; available in 30 languages. Google Play: https://play.google.com/store/apps/details?id=com.nitcart.screenoffrecorder
+- [Expense Tracker & Budget](https://apps.nitcart.com/expense-tracker/): A private daily expense tracker and budget planner. Separate expense and income tabs, day/week/month/year/custom filters, a monthly budget with a heads-up before overspending, multiple accounts with transfers, custom categories, recurring transactions with bill reminders, on-device receipt scanning, and optional import of payment notifications from bank and UPI apps (processed on the phone; the app does not read SMS). Data is kept in an encrypted local database with optional PIN and fingerprint lock; password-protected backup and restore to a file the user chooses. No account and no bank login needed; works offline. Requires Android 8.0 or later; English only. Google Play: https://play.google.com/store/apps/details?id=com.nitcart.expensetracker
+
+## Privacy policies
+
+- [DashCam privacy policy](https://apps.nitcart.com/dashcam/privacy-policy.html): Video, audio and location stay on the device; NITCART runs no server; only the Google AdMob SDK uses the network.
+- [Screen Off Recorder privacy policy](https://apps.nitcart.com/screen-off-recorder/privacy-policy.html): Recordings stay on the device; the only network activity is Google AdMob ads.
+- [Expense Tracker & Budget privacy policy](https://apps.nitcart.com/expense-tracker/privacy-policy.html): Financial data stays in an encrypted database on the phone; only Google AdMob ads use the network.
+- [Spendly privacy policy](https://apps.nitcart.com/spendly/privacy-policy.html): Spendly is a personal expense tracking and group sharing app; personal data stays on the device, group expenses sync for sharing, and Google Drive backup is optional.
+
+## Optional
+
+- [Sitemap](https://apps.nitcart.com/sitemap.xml)

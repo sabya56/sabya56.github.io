@@ -1,237 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-screen-off-recorder">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Screen Off Recorder</title>
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <title>Screen Off Recorder Privacy Policy | NITCART</title>
+  <meta name="description" content="Privacy policy for Screen Off Recorder for Android. Recordings, audio and location stay on your device; the only network activity is Google AdMob ads." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://apps.nitcart.com/screen-off-recorder/privacy-policy.html" />
+  <meta name="theme-color" content="#1c1b1f" />
+  <link rel="icon" href="playstore/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="playstore/icon-512.png" />
 
-    :root {
-      --navy: #0f1a2e;
-      --navy-mid: #16213e;
-      --navy-soft: #1e2d45;
-      --red: #e53935;
-      --red-dark: #b71c1c;
-      --white: #ffffff;
-      --text: #1a1a2e;
-      --text-mute: #5a6275;
-      --bg: #f0f2f7;
-      --card: #ffffff;
-      --border: #e2e6ef;
-    }
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NITCART Apps" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Screen Off Recorder Privacy Policy" />
+  <meta property="og:description" content="Privacy policy for Screen Off Recorder for Android. Recordings, audio and location stay on your device; the only network activity is Google AdMob ads." />
+  <meta property="og:url" content="https://apps.nitcart.com/screen-off-recorder/privacy-policy.html" />
+  <meta property="og:image" content="https://apps.nitcart.com/assets/og/screen-off-recorder.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Screen Off Recorder privacy policy" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Screen Off Recorder Privacy Policy" />
+  <meta name="twitter:description" content="Privacy policy for Screen Off Recorder for Android. Recordings, audio and location stay on your device; the only network activity is Google AdMob ads." />
+  <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/screen-off-recorder.png" />
+  <meta name="twitter:image:alt" content="Screen Off Recorder privacy policy" />
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    /* ── Header ─────────────────────────────────────── */
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 52px 24px 44px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* subtle radial glow behind the logo */
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(229, 57, 53, 0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .header-logo {
-      width: 88px;
-      height: 88px;
-      border-radius: 22px;
-      border: 3px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 6px rgba(229, 57, 53, 0.15);
-      margin-bottom: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    header h1 {
-      font-size: 1.9rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    .header-app-name {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--red);
-      letter-spacing: 0.3px;
-      margin-bottom: 6px;
-    }
-
-    header .date {
-      font-size: 0.82rem;
-      opacity: 0.5;
-    }
-
-    /* ── Red accent rule below header ───────────────── */
-    .accent-bar {
-      height: 4px;
-      background: linear-gradient(90deg, var(--navy-mid) 0%, var(--red) 50%, var(--navy-mid) 100%);
-    }
-
-    /* ── Main layout ─────────────────────────────────── */
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 64px;
-    }
-
-    /* ── Cards ───────────────────────────────────────── */
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      box-shadow: 0 2px 16px rgba(15, 26, 46, 0.08);
-      padding: 30px 34px;
-      margin-bottom: 20px;
-      border-left: 4px solid transparent;
-      transition: border-color 0.2s;
-    }
-
-    .card:hover {
-      border-left-color: var(--red);
-    }
-
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* red dot prefix on every section heading */
-    h2::before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--red);
-      flex-shrink: 0;
-    }
-
-    p {
-      margin-bottom: 12px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin: 8px 0 12px 22px;
-    }
-
-    ul li {
-      margin-bottom: 6px;
-    }
-
-    code {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-      font-size: 0.82em;
-      background: #eef0f6;
-      color: var(--navy);
-      padding: 1px 6px;
-      border-radius: 4px;
-    }
-
-    /* ── Permission badges ───────────────────────────── */
-    .badge {
-      display: inline-block;
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 6px;
-      padding: 3px 9px;
-      font-size: 0.74rem;
-      font-weight: 700;
-      margin-right: 4px;
-      margin-bottom: 4px;
-      letter-spacing: 0.4px;
-      vertical-align: middle;
-    }
-
-    /* ── Highlight box ───────────────────────────────── */
-    .highlight-box {
-      background: rgba(229, 57, 53, 0.06);
-      border-left: 4px solid var(--red);
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 14px 0;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .highlight-box strong {
-      color: var(--red-dark);
-    }
-
-    /* ── Links ───────────────────────────────────────── */
-    a {
-      color: var(--red-dark);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* ── Footer ──────────────────────────────────────── */
-    footer {
-      background: var(--navy);
-      color: rgba(255, 255, 255, 0.45);
-      text-align: center;
-      font-size: 0.8rem;
-      padding: 20px 24px;
-    }
-
-    footer span {
-      color: var(--red);
-    }
-  </style>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/nitcart.css" />
 </head>
 
 <body>
 
-  <header>
-    <img class="header-logo" src="playstore/icon-512.png" alt="Screen Off Recorder icon" />
-    <div class="header-app-name">Screen Off Recorder</div>
-    <h1>Privacy Policy</h1>
-    <div class="date">Last updated: June 16, 2026</div>
+  <nav class="navbar navbar-expand sticky-top site-nav policy-nav" data-bs-theme="dark">
+    <div class="container-fluid px-3 px-lg-4">
+      <a href="/" class="navbar-brand">NIT<span>CART</span></a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./">Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">All apps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero policy-hero">
+    <div class="container">
+      <img class="hero-icon" src="playstore/icon-512.png" width="88" height="88" alt="Screen Off Recorder icon" />
+      <div class="policy-app">Screen Off Recorder</div>
+      <h1>Privacy Policy</h1>
+      <div class="policy-date">Last updated: June 16, 2026</div>
+    </div>
   </header>
 
   <div class="accent-bar"></div>
 
-  <main>
+  <main class="policy-body">
+    <div class="container">
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Overview</h2>
       <p>
         Screen Off Recorder ("the App") lets you record video and audio while the screen is off or the
@@ -244,24 +73,26 @@
         activity is ads served by Google AdMob.
       </div>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Permissions &amp; Data Access</h2>
 
-      <p><span class="badge">CAMERA</span></p>
+      <p><span class="badge perm-badge">CAMERA</span></p>
       <p>
         Used exclusively to capture video frames during a recording session. No camera feed is
         transmitted over the network or shared with third parties. The App intentionally suppresses
         the live preview so recording works with the screen off.
       </p>
 
-      <p><span class="badge">RECORD_AUDIO</span></p>
+      <p><span class="badge perm-badge">RECORD_AUDIO</span></p>
       <p>
         Used to capture the microphone signal into the recording. Audio can be disabled in Settings.
         Audio data is written only to the output MP4 file on your device.
       </p>
 
-      <p><span class="badge">ACCESS_FINE_LOCATION</span> <span class="badge">ACCESS_COARSE_LOCATION</span></p>
+      <p><span class="badge perm-badge">ACCESS_FINE_LOCATION</span> <span class="badge perm-badge">ACCESS_COARSE_LOCATION</span></p>
       <p>
         Requested only when the <em>Location Overlay</em> option is enabled in Settings. If enabled,
         the App resolves your location once at the start of each recording session and burns the
@@ -270,7 +101,7 @@
         these permissions are not used.
       </p>
 
-      <p><span class="badge">READ_EXTERNAL_STORAGE</span> <span class="badge">WRITE_EXTERNAL_STORAGE</span></p>
+      <p><span class="badge perm-badge">READ_EXTERNAL_STORAGE</span> <span class="badge perm-badge">WRITE_EXTERNAL_STORAGE</span></p>
       <p>
         Used to write raw recording segments and merged MP4 files to
         <code>Movies/OffscreenRecorder/</code> on your device. On Android 9 and below this requires
@@ -279,36 +110,38 @@
         case files are written there instead.
       </p>
 
-      <p><span class="badge">FOREGROUND_SERVICE</span> <span class="badge">WAKE_LOCK</span></p>
+      <p><span class="badge perm-badge">FOREGROUND_SERVICE</span> <span class="badge perm-badge">WAKE_LOCK</span></p>
       <p>
         Required to keep the recording service alive while the screen is off. A persistent
         notification is shown whenever recording is active. A partial wake lock prevents the CPU from
         sleeping mid-session.
       </p>
 
-      <p><span class="badge">POST_NOTIFICATIONS</span></p>
+      <p><span class="badge perm-badge">POST_NOTIFICATIONS</span></p>
       <p>Used solely to display the foreground-service recording notification and its controls (Pause / Stop).</p>
 
-      <p><span class="badge">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></p>
+      <p><span class="badge perm-badge">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></p>
       <p>
         The App may request battery-optimization exemption to prevent the OS from killing long
         recording sessions. No data is collected as a result of this permission.
       </p>
 
-      <p><span class="badge">SYSTEM_ALERT_WINDOW</span></p>
+      <p><span class="badge perm-badge">SYSTEM_ALERT_WINDOW</span></p>
       <p>
         May be used to display a minimal recording-status indicator while the App is in the
         background. This overlay contains no user data.
       </p>
 
-      <p><span class="badge">INTERNET</span> <span class="badge">ACCESS_NETWORK_STATE</span></p>
+      <p><span class="badge perm-badge">INTERNET</span> <span class="badge perm-badge">ACCESS_NETWORK_STATE</span></p>
       <p>
         Used only by Google AdMob to display advertisements. See the
         <strong>Advertising</strong> section below for details.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Stored on Your Device</h2>
       <ul>
         <li>
@@ -329,8 +162,10 @@
         </li>
       </ul>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Transmission</h2>
       <p>
         The App does <strong>not</strong> have its own backend. No videos, audio, location data,
@@ -340,8 +175,10 @@
         The only outbound network calls are made by the Google AdMob SDK (see below).
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Advertising (Google AdMob)</h2>
       <p>
         The App displays ads provided by Google AdMob. Google may collect and use data on your device
@@ -358,8 +195,10 @@
         AdMob beyond aggregated, anonymised revenue metrics.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Sharing</h2>
       <p>
         The App does not sell, trade, or otherwise transfer your personal information to third parties.
@@ -371,16 +210,20 @@
         whichever external app you select. This action is entirely under your control.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Children's Privacy</h2>
       <p>
         The App is not directed at children under the age of 13. The developer does not knowingly
         collect personal information from children.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Data Retention &amp; Deletion</h2>
       <p>
         All data (recordings and preferences) resides on your device. You can delete recordings at
@@ -388,8 +231,10 @@
         all preferences; recordings in external storage may persist and can be deleted manually.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Changes to This Policy</h2>
       <p>
         This policy may be updated from time to time. The "Last updated" date at the top of this page
@@ -397,20 +242,104 @@
         acceptance of the revised policy.
       </p>
     </div>
+    </section>
 
-    <div class="card">
+    <section class="card policy-card">
+      <div class="card-body">
       <h2>Contact</h2>
       <p>
         Questions or concerns about this privacy policy? Contact the developer at:<br />
         <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
       </p>
     </div>
+    </section>
 
+    </div>
   </main>
 
-  <footer>
-    &copy; 2026 <span>Screen Off Recorder</span>. All rights reserved.
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="NITCART apps">
+        <a href="/dashcam/">DashCam</a>
+        <a href="/screen-off-recorder/">Screen Off Recorder</a>
+        <a href="/expense-tracker/">Expense Tracker &amp; Budget</a>
+      </nav>
+      <p>
+        &copy; 2026 <span class="brand">NITCART</span> &nbsp;·&nbsp;
+        <a href="/">All apps</a> &nbsp;·&nbsp;
+        <a href="mailto:appsupport@nitcart.com">appsupport@nitcart.com</a>
+      </p>
+    </div>
   </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apps.nitcart.com/#organization",
+        "name": "NITCART",
+        "url": "https://apps.nitcart.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://apps.nitcart.com/assets/nitcart-logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "email": "appsupport@nitcart.com",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=NITCART"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://apps.nitcart.com/screen-off-recorder/privacy-policy.html#webpage",
+        "url": "https://apps.nitcart.com/screen-off-recorder/privacy-policy.html",
+        "name": "Screen Off Recorder Privacy Policy | NITCART",
+        "description": "Privacy policy for Screen Off Recorder for Android. Recordings, audio and location stay on your device; the only network activity is Google AdMob ads.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://apps.nitcart.com/#website"
+        },
+        "about": {
+          "@id": "https://apps.nitcart.com/screen-off-recorder/#app"
+        },
+        "publisher": {
+          "@id": "https://apps.nitcart.com/#organization"
+        },
+        "dateModified": "2026-06-16",
+        "breadcrumb": {
+          "@id": "https://apps.nitcart.com/screen-off-recorder/privacy-policy.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://apps.nitcart.com/screen-off-recorder/privacy-policy.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "NITCART Apps",
+            "item": "https://apps.nitcart.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Screen Off Recorder",
+            "item": "https://apps.nitcart.com/screen-off-recorder/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Privacy Policy",
+            "item": "https://apps.nitcart.com/screen-off-recorder/privacy-policy.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
 </body>
 

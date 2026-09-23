@@ -1,0 +1,29 @@
+# NITCART Apps — https://apps.nitcart.com
+# Everything on this site is public. Search engines and AI assistants are welcome to crawl it.
+
+User-agent: *
+Allow: /
+
+# Named explicitly so the intent is unambiguous for search and AI crawlers:
+# Google Search, Gemini (Google-Extended), Bing (which powers ChatGPT search results),
+# ChatGPT, Perplexity, Claude, Apple, Amazon, DuckDuckGo and Meta.
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: DuckAssistBot
+User-agent: meta-externalagent
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://apps.nitcart.com/sitemap.xml
