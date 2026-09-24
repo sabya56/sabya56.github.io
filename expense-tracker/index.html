@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="NITCART Apps" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="Expense Tracker &amp; Budget — A Private Money Manager for Android" />
-  <meta property="og:description" content="Track daily expenses and income, stay inside a budget, and see where your money goes. No account, no cloud: your data stays encrypted on your phone." />
+  <meta property="og:description" content="Track daily expenses and income, stay inside a budget, and see where your money goes. No account needed: your data stays encrypted on your phone, with optional Google Drive backup." />
   <meta property="og:url" content="https://apps.nitcart.com/expense-tracker/" />
   <meta property="og:image" content="https://apps.nitcart.com/assets/og/expense-tracker.png" />
   <meta property="og:image:width" content="1200" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Expense Tracker & Budget for Android by NITCART" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Expense Tracker &amp; Budget — A Private Money Manager for Android" />
-  <meta name="twitter:description" content="Track daily expenses and income, stay inside a budget, and see where your money goes. No account, no cloud: your data stays encrypted on your phone." />
+  <meta name="twitter:description" content="Track daily expenses and income, stay inside a budget, and see where your money goes. No account needed: your data stays encrypted on your phone, with optional Google Drive backup." />
   <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/expense-tracker.png" />
   <meta name="twitter:image:alt" content="Expense Tracker & Budget for Android by NITCART" />
 
@@ -58,8 +58,9 @@
       <h1 class="hero-title">Track every expense.<br /><span>Keep it to yourself.</span></h1>
       <p class="hero-lead">
         Expense Tracker &amp; Budget logs your daily spending and income, keeps you inside a
-        monthly budget, and shows exactly where the money went. There's no account, no sign-up
-        and no cloud. Your financial data stays encrypted on your phone.
+        monthly budget, and shows exactly where the money went. There's no account and no
+        sign-up. Your financial data stays encrypted on your phone, with an optional encrypted
+        backup to your own Google Drive.
       </p>
       <a class="btn btn-accent btn-cta btn-glow rounded-pill" href="https://play.google.com/store/apps/details?id=com.nitcart.expensetracker" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
@@ -326,8 +327,8 @@
         </div>
         <div class="col">
           <div class="feature h-100">
-            <h3>Backup you control</h3>
-            <p>A password-protected backup file saved wherever you choose, which you can restore on a new phone.</p>
+            <h3>Google Drive backup</h3>
+            <p>An encrypted backup to your own Google Drive, daily at a time you choose or with one tap. New phone? Connect the same account and restore everything.</p>
           </div>
         </div>
         <div class="col">
@@ -352,7 +353,7 @@
           </h3>
           <div id="faq-1" class="accordion-collapse collapse">
             <div class="accordion-body">
-            Yes. Expense Tracker &amp; Budget works fully offline. Tracking, budgets, receipt scanning, bill reminders and backup all run on your phone, and the internet is used only to show ads.
+            Yes. Expense Tracker &amp; Budget works fully offline. Tracking, budgets, receipt scanning and bill reminders all run on your phone. The internet is used only to show ads and, if you turn it on, for Google Drive backup.
             </div>
           </div>
         </div>
@@ -362,8 +363,8 @@
           </h3>
           <div id="faq-2" class="accordion-collapse collapse">
             <div class="accordion-body">
-            No. There's no sign-up, no login and no cloud sync. Open the app and start adding
-            transactions.
+            No. There's no sign-up and no login. Open the app and start adding transactions. A
+            Google account is only needed if you want to back up to Google Drive.
             </div>
           </div>
         </div>
@@ -373,9 +374,11 @@
           </h3>
           <div id="faq-3" class="accordion-collapse collapse">
             <div class="accordion-body">
-            Only on your phone, in an encrypted database. The encryption key is generated on first
+            On your phone, in an encrypted database. The encryption key is generated on first
             launch and held by the Android Keystore, so the database file can't be read on its own.
-            For an extra layer, turn on the app lock with a PIN and fingerprint unlock.
+            For an extra layer, turn on the app lock with a PIN and fingerprint unlock. If you turn
+            on Google Drive backup, an encrypted copy is also kept in a private app folder in your
+            own Drive, which only the app can open and the developer can't see.
             </div>
           </div>
         </div>
@@ -399,10 +402,10 @@
           </h3>
           <div id="faq-5" class="accordion-collapse collapse">
             <div class="accordion-body">
-            Create a backup from Settings. It's a password-protected file saved wherever you pick
-            in the system file picker. On the new phone, install the app and restore that file with
-            the same password. The app itself never uploads anything. Your data is removed with
-            the app, so back up before you uninstall.
+            Back up to Google Drive from Settings with &ldquo;Back up now&rdquo;, or turn on the
+            daily automatic backup. On the new phone, install the app and connect the same Google
+            account. It finds your backup and offers to restore it. No
+            password needed. Your data is removed with the app, so back up before you uninstall.
             </div>
           </div>
         </div>
@@ -587,7 +590,7 @@
           "On-device receipt scanning",
           "Optional import from bank and UPI app notifications",
           "Encrypted local database with PIN and fingerprint lock",
-          "Password-protected backup and restore",
+          "Encrypted Google Drive backup, daily or on demand, with restore on a new phone",
           "Works offline with no account"
         ],
         "installUrl": "https://play.google.com/store/apps/details?id=com.nitcart.expensetracker",
@@ -626,7 +629,7 @@
         "breadcrumb": {
           "@id": "https://apps.nitcart.com/expense-tracker/#breadcrumb"
         },
-        "dateModified": "2026-09-23"
+        "dateModified": "2026-09-24"
       },
       {
         "@type": "BreadcrumbList",
@@ -655,7 +658,7 @@
             "name": "Is there an expense tracker that works without internet?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Expense Tracker & Budget works fully offline. Tracking, budgets, receipt scanning, bill reminders and backup all run on your phone, and the internet is used only to show ads."
+              "text": "Yes. Expense Tracker & Budget works fully offline. Tracking, budgets, receipt scanning and bill reminders all run on your phone. The internet is used only to show ads and, if you turn it on, for Google Drive backup."
             }
           },
           {
@@ -663,7 +666,7 @@
             "name": "Do I need to create an account?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. There's no sign-up, no login and no cloud sync. Open the app and start adding transactions."
+              "text": "No. There's no sign-up and no login. Open the app and start adding transactions. A Google account is only needed if you want to back up to Google Drive."
             }
           },
           {
@@ -671,7 +674,7 @@
             "name": "Where is my financial data stored?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Only on your phone, in an encrypted database. The encryption key is generated on first launch and held by the Android Keystore, so the database file can't be read on its own. For an extra layer, turn on the app lock with a PIN and fingerprint unlock."
+              "text": "On your phone, in an encrypted database. The encryption key is generated on first launch and held by the Android Keystore, so the database file can't be read on its own. For an extra layer, turn on the app lock with a PIN and fingerprint unlock. If you turn on Google Drive backup, an encrypted copy is also kept in a private app folder in your own Drive, which only the app can open and the developer can't see."
             }
           },
           {
@@ -687,7 +690,7 @@
             "name": "How do I move my data to a new phone?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Create a backup from Settings. It's a password-protected file saved wherever you pick in the system file picker. On the new phone, install the app and restore that file with the same password. The app itself never uploads anything. Your data is removed with the app, so back up before you uninstall."
+              "text": "Back up to Google Drive from Settings with \"Back up now\", or turn on the daily automatic backup. On the new phone, install the app and connect the same Google account. It finds your backup and offers to restore it. No password needed. Your data is removed with the app, so back up before you uninstall."
             }
           },
           {
