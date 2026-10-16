@@ -581,6 +581,7 @@ ol.steps span { color: var(--text-mute); font-size: 0.94rem; }
 .site-footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
 .site-footer a:hover { color: #fff; }
 .site-footer .brand { color: var(--accent); font-weight: 700; }
+.site-footer .footer-note { margin-top: 0.5rem; }
 
 /* ── AT A GLANCE FACTS (landing pages) ─────────────── */
 .facts { padding: 2.25rem 0; border-bottom: 1px solid var(--border); background: var(--card); }
