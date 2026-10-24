@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../assets/tag-manager.js"></script>
   <title>DashCam — Dash Cam App for Android with Loop Recording &amp; GPS</title>
-  <meta name="description" content="Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, and speed and GPS on the video. Free, no account, stays on your phone." />
+  <meta name="description" content="Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, speed and GPS on the video, and a route map of every drive. Free, no account." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://apps.nitcart.com/dashcam/" />
   <meta name="theme-color" content="#0b1d3a" />
@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="NITCART Apps" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="DashCam — Use Your Android Phone as a Dash Cam" />
-  <meta property="og:description" content="Loop recording, impact detection, and speed &amp; GPS burned into every frame. Free, no account, and your footage never leaves the phone." />
+  <meta property="og:description" content="Loop recording, impact detection, speed &amp; GPS burned into every frame, and every drive saved with its route on a map. Free, no account, and your footage never leaves the phone." />
   <meta property="og:url" content="https://apps.nitcart.com/dashcam/" />
   <meta property="og:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
   <meta property="og:image:width" content="1200" />
@@ -25,7 +25,7 @@
   <meta property="og:image:alt" content="DashCam - Drive Recorder for Android by NITCART" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DashCam — Use Your Android Phone as a Dash Cam" />
-  <meta name="twitter:description" content="Loop recording, impact detection, and speed &amp; GPS burned into every frame. Free, no account, and your footage never leaves the phone." />
+  <meta name="twitter:description" content="Loop recording, impact detection, speed &amp; GPS burned into every frame, and every drive saved with its route on a map. Free, no account, and your footage never leaves the phone." />
   <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
   <meta name="twitter:image:alt" content="DashCam - Drive Recorder for Android by NITCART" />
 
@@ -59,8 +59,8 @@
       <h1 class="hero-title">Use the phone you already own<br /><span>as a dash cam.</span></h1>
       <p class="hero-lead">
         DashCam loop-records your drive, keeps the clip that matters, and burns the time, speed
-        and GPS coordinates into the video itself. No extra hardware, no account, and nothing
-        uploaded anywhere.
+        and GPS coordinates into the video itself. Every drive is saved as a trip, with its route
+        on a map. No extra hardware, no account, and your footage is never uploaded.
       </p>
       <a class="btn btn-accent btn-cta btn-glow rounded-pill" href="https://play.google.com/store/apps/details?id=com.nitcart.dashcam" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
@@ -80,7 +80,7 @@
         <div class="fact"><dt>In-app purchases</dt><dd>None</dd></div>
         <div class="fact"><dt>Requires</dt><dd>Android 7.0+</dd></div>
         <div class="fact"><dt>Account</dt><dd>Not needed</dd></div>
-        <div class="fact"><dt>Works offline</dt><dd>Yes</dd></div>
+        <div class="fact"><dt>Records offline</dt><dd>Yes</dd></div>
         <div class="fact"><dt>Your footage</dt><dd>Stays on the phone</dd></div>
         <div class="fact"><dt>Languages</dt><dd>30</dd></div>
         <div class="fact"><dt>Parking mode</dt><dd>Not available</dd></div>
@@ -264,6 +264,14 @@
             moved out of the loop and never deleted.
           </span>
         </li>
+        <li>
+          <strong>Look back over the drive in Trips</strong>
+          <span>
+            When you stop, the session is saved as a trip: where it started and ended, the
+            distance, drive time, top and average speed, and the clips it recorded. Open it to
+            see the route on a map, coloured by how fast you were going.
+          </span>
+        </li>
       </ol>
 
       <div class="note">
@@ -329,8 +337,32 @@
         </div>
         <div class="col">
           <div class="feature h-100">
+            <h3>Every drive saved as a trip</h3>
+            <p>Start and end places, distance, drive time, top and average speed, and the clips each drive recorded, grouped by day on the Trips tab.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>The route on a map</h3>
+            <p>A live map of each trip, coloured green, yellow and red by speed. Points are kept on every bend and change of speed, so corners sit where they happened and the history stays small.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Weekly, monthly and yearly summaries</h3>
+            <p>Distance, drive time, trips and speed for the period you pick, each with a chart that sets it against the period before.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
+            <h3>Find any clip or trip</h3>
+            <p>Filter Clips and Trips to incidents or normal drives, and to today, this week, this month, this year or a range you choose.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature h-100">
             <h3>Works with no signal</h3>
-            <p>Recording, retention, overlays and playback are entirely on-device. A tunnel or a dead zone changes nothing.</p>
+            <p>Recording, retention, overlays, playback and trip history are all on the device. A tunnel or a dead zone changes nothing; only the trip map needs a connection to show.</p>
           </div>
         </div>
       </div>
@@ -414,13 +446,47 @@
           </h3>
           <div id="faq-6" class="accordion-collapse collapse">
             <div class="accordion-body">
-            No. There is no account, no server and no cloud sync. Video, audio and location are
-            processed on the device to produce the recording and its burned-in overlay, and none of
-            them are transmitted. The app does hold the internet permission, because it shows ads —
-            but the ad code has no access to your recordings, and everything the app records works
-            with no connection at all. The
-            <a href="privacy-policy.html">privacy policy</a> sets out exactly what the ad SDK
-            collects.
+            No. There is no account, no server and no cloud sync, and your video and audio never
+            leave the phone. Trip history is kept on the phone too. Two things use the internet:
+            ads, and looking at your trips. A trip's page loads the map of its route from Google
+            Maps, and the places where your trips started and ended are named through the
+            address service Android provides (run by Google on most phones), so those
+            coordinates reach Google at that moment. No location is sent while you drive. The ad code has no access to your
+            recordings or trips, and recording works with no connection at all. The
+            <a href="privacy-policy.html">privacy policy</a> sets out exactly what is sent, and to
+            whom.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-11" aria-expanded="false" aria-controls="faq-11">Does it keep a history of my drives?</button>
+          </h3>
+          <div id="faq-11" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            Yes, if you want it to. With Save trip history on, which is the default, each recording
+            session is saved as a trip on the Trips tab: when and where it started and ended, the
+            distance, drive time, top and average speed, the route, and the clips it recorded.
+            Summary cards above the list add up the distance, drive time, trips and speed for the
+            week, month or year, against the one before. The route needs Precise location; without
+            it a trip keeps its times and clips. You can turn trip history off in Settings, and
+            delete any trip from the Trips tab, with or without its clips.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-12" aria-expanded="false" aria-controls="faq-12">How accurate is the route on the trip map?</button>
+          </h3>
+          <div id="faq-12" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            As accurate as the phone's GPS. DashCam reads your position once a second while
+            recording, and works out distance and top speed from every reading. For the map it keeps
+            a point wherever the road bends, whenever your speed changes by 15 km/h or more, and
+            otherwise every 15 seconds on the move (25 seconds when stopped), so corners are drawn
+            where they happened without storing every second of the drive. The line is coloured by
+            speed, and a stretch where the GPS signal was lost for more than 30 seconds is drawn in
+            grey.
             </div>
           </div>
         </div>
@@ -454,9 +520,10 @@
           </h3>
           <div id="faq-9" class="accordion-collapse collapse">
             <div class="accordion-body">
-            They are deleted. Clips are written to the app's own external files directory, which is
-            why DashCam needs no storage permission at all — but that directory is removed with the
-            app. Export anything you want to keep before uninstalling.
+            They are deleted, and so is your trip history. Clips are written to the app's own
+            external files directory, which is why DashCam needs no storage permission at all — but
+            that directory is removed with the app. Export anything you want to keep before
+            uninstalling.
             </div>
           </div>
         </div>
@@ -557,7 +624,7 @@
           "Dash Cam: Car Video Recorder",
           "DashCam"
         ],
-        "description": "Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, and speed and GPS on the video. Free, no account, stays on your phone.",
+        "description": "Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, speed and GPS on the video, and a route map of every drive. Free, no account.",
         "url": "https://apps.nitcart.com/dashcam/",
         "image": "https://apps.nitcart.com/dashcam/playstore/icon-512.png",
         "screenshot": [
@@ -611,7 +678,11 @@
           "Keeps recording with the screen off and in the background",
           "Hands-free start when the car charger connects, the stereo pairs over Bluetooth, or the phone boots",
           "Floating preview window over other apps",
-          "Works offline; footage never leaves the device",
+          "Trip history: every drive saved with its distance, drive time, speeds and clips",
+          "Route map of each trip, coloured by speed",
+          "Weekly, monthly and yearly driving summaries with charts",
+          "Filter clips and trips by incidents and by date",
+          "Records offline; footage never leaves the device",
           "Available in 30 languages"
         ],
         "installUrl": "https://play.google.com/store/apps/details?id=com.nitcart.dashcam",
@@ -638,7 +709,7 @@
         "@id": "https://apps.nitcart.com/dashcam/#webpage",
         "url": "https://apps.nitcart.com/dashcam/",
         "name": "DashCam — Dash Cam App for Android with Loop Recording & GPS",
-        "description": "Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, and speed and GPS on the video. Free, no account, stays on your phone.",
+        "description": "Turn your Android phone into a dash cam: loop recording with the screen off, impact detection, speed and GPS on the video, and a route map of every drive. Free, no account.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://apps.nitcart.com/#website"
@@ -650,7 +721,7 @@
         "breadcrumb": {
           "@id": "https://apps.nitcart.com/dashcam/#breadcrumb"
         },
-        "dateModified": "2026-09-23"
+        "dateModified": "2026-10-24"
       },
       {
         "@type": "BreadcrumbList",
@@ -719,7 +790,23 @@
             "name": "Does my footage get uploaded anywhere?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. There is no account, no server and no cloud sync. Video, audio and location are processed on the device to produce the recording and its burned-in overlay, and none of them are transmitted. The app does hold the internet permission, because it shows ads — but the ad code has no access to your recordings, and everything the app records works with no connection at all. The privacy policy sets out exactly what the ad SDK collects."
+              "text": "No. There is no account, no server and no cloud sync, and your video and audio never leave the phone. Trip history is kept on the phone too. Two things use the internet: ads, and looking at your trips. A trip's page loads the map of its route from Google Maps, and the places where your trips started and ended are named through the address service Android provides (run by Google on most phones), so those coordinates reach Google at that moment. No location is sent while you drive. The ad code has no access to your recordings or trips, and recording works with no connection at all. The privacy policy sets out exactly what is sent, and to whom."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it keep a history of my drives?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if you want it to. With Save trip history on, which is the default, each recording session is saved as a trip on the Trips tab: when and where it started and ended, the distance, drive time, top and average speed, the route, and the clips it recorded. Summary cards above the list add up the distance, drive time, trips and speed for the week, month or year, against the one before. The route needs Precise location; without it a trip keeps its times and clips. You can turn trip history off in Settings, and delete any trip from the Trips tab, with or without its clips."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is the route on the trip map?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As accurate as the phone's GPS. DashCam reads your position once a second while recording, and works out distance and top speed from every reading. For the map it keeps a point wherever the road bends, whenever your speed changes by 15 km/h or more, and otherwise every 15 seconds on the move (25 seconds when stopped), so corners are drawn where they happened without storing every second of the drive. The line is coloured by speed, and a stretch where the GPS signal was lost for more than 30 seconds is drawn in grey."
             }
           },
           {
@@ -743,7 +830,7 @@
             "name": "What happens to my clips if I uninstall the app?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "They are deleted. Clips are written to the app's own external files directory, which is why DashCam needs no storage permission at all — but that directory is removed with the app. Export anything you want to keep before uninstalling."
+              "text": "They are deleted, and so is your trip history. Clips are written to the app's own external files directory, which is why DashCam needs no storage permission at all — but that directory is removed with the app. Export anything you want to keep before uninstalling."
             }
           },
           {

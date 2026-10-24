@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../assets/tag-manager.js"></script>
   <title>DashCam Privacy Policy — Android Dash Cam App | NITCART</title>
-  <meta name="description" content="Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet." />
+  <meta name="description" content="Privacy policy for DashCam for Android. Video, audio and trip history stay on your phone and NITCART runs no server. Ads, Play updates and the trip map use the internet." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://apps.nitcart.com/dashcam/privacy-policy.html" />
   <meta name="theme-color" content="#0b1d3a" />
@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="NITCART Apps" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="DashCam Privacy Policy — Android Dash Cam App" />
-  <meta property="og:description" content="Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet." />
+  <meta property="og:description" content="Privacy policy for DashCam for Android. Video, audio and trip history stay on your phone and NITCART runs no server. Ads, Play updates and the trip map use the internet." />
   <meta property="og:url" content="https://apps.nitcart.com/dashcam/privacy-policy.html" />
   <meta property="og:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
   <meta property="og:image:width" content="1200" />
@@ -25,7 +25,7 @@
   <meta property="og:image:alt" content="DashCam privacy policy" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DashCam Privacy Policy — Android Dash Cam App" />
-  <meta name="twitter:description" content="Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet." />
+  <meta name="twitter:description" content="Privacy policy for DashCam for Android. Video, audio and trip history stay on your phone and NITCART runs no server. Ads, Play updates and the trip map use the internet." />
   <meta name="twitter:image" content="https://apps.nitcart.com/assets/og/dashcam.png" />
   <meta name="twitter:image:alt" content="DashCam privacy policy" />
 
@@ -51,7 +51,7 @@
       <img class="hero-icon" src="playstore/icon-512.png" width="88" height="88" alt="DashCam icon" />
       <div class="policy-app">DashCam &middot; com.nitcart.dashcam</div>
       <h1>Privacy Policy</h1>
-      <div class="policy-date">Last updated: August 19, 2026</div>
+      <div class="policy-date">Last updated: October 24, 2026</div>
     </div>
   </header>
 
@@ -65,18 +65,20 @@
       <h2>Overview</h2>
       <p>
         DashCam ("the App") turns your phone into a dashcam: it loop-records your drive, protects
-        the clips that matter, and keeps everything on the phone. This policy explains what the App
-        accesses, how it is used, and whether any of it leaves your device.
+        the clips that matter, and keeps a history of your trips on the phone. This policy explains
+        what the App accesses, how it is used, and whether any of it leaves your device.
       </p>
       <div class="highlight-box">
-        <strong>Short version:</strong> your footage stays on your device. Video, audio and
-        location are written to the App's own private storage and are never uploaded &mdash;
-        Nitcart operates no server and receives nothing about you or your driving.
+        <strong>Short version:</strong> your footage and your trip history stay on your device.
+        Video, audio and the routes of your drives are written to the App's own private storage
+        and are never uploaded &mdash; Nitcart operates no server and receives nothing about you
+        or your driving. A location leaves the phone only while you look at your trips: Google
+        draws a trip's map, and names the places where your trips started and ended (see
+        <a href="#transmission">Data Transmission</a>).
       </div>
       <p>
-        The App does show ads, supplied by Google AdMob, and that is the one part of it that talks
-        to the internet. AdMob collects device-level data of its own to select and measure those
-        ads; what it collects, and how to limit it, is set out under
+        The App shows ads, supplied by Google AdMob. AdMob collects device-level data of its own to
+        select and measure those ads; what it collects, and how to limit it, is set out under
         <a href="#advertising">Advertising</a> below. Nothing the App records &mdash; not a frame
         of video, not a second of audio, not a coordinate &mdash; is any part of that.
       </p>
@@ -110,10 +112,11 @@
         <span class="badge perm-badge perm-optional">ACCESS_COARSE_LOCATION</span>
       </p>
       <p>
-        Reading your speed and coordinates so they can be burned into the video frames and shown on
-        the Record screen. Optional — turn the speed and GPS overlay off and location is never
-        requested. Location is read only while a recording is running. DashCam does
-        <strong>not</strong> request background location access.
+        Reading your speed and coordinates so they can be burned into the video frames, shown on
+        the Record screen, and saved as the route of the trip (if "Save trip history" is on). Optional
+        — with the speed and GPS overlay and trip history both off, location is never used, and
+        without location a trip keeps only its times and clips. Location is read only while a
+        recording is running. DashCam does <strong>not</strong> request background location access.
       </p>
       <p>
         <span class="badge perm-badge">INTERNET</span>
@@ -121,9 +124,11 @@
         <span class="badge perm-badge">AD_ID</span>
       </p>
       <p>
-        Used by the Google AdMob SDK, and by nothing else in the App. No other part of DashCam
-        opens a network connection: recording, playback, the storage limit and the overlays all
-        work with the device offline. See <a href="#advertising">Advertising</a>.
+        Used by the Google AdMob SDK (see <a href="#advertising">Advertising</a>), by the map and
+        place names on a trip's page, and by Google Play's in-app update check (see
+        <a href="#transmission">Data Transmission</a>). The advertising ID is used by AdMob alone.
+        Recording, playback, the storage limit, the overlays and the saving of trips all work with
+        the device offline.
       </p>
 
 
@@ -186,8 +191,16 @@
           which is not visible to your gallery or to other apps.
         </li>
         <li>
+          <strong>Trip history</strong> — for each recording session, if "Save trip history" is on:
+          its start and end times, the route (positions along the way, with their speeds), the
+          distance, the top speed, the names of the places it started and ended, and the names of
+          the clips it recorded. Kept in a database in DashCam's private app storage.
+        </li>
+        <li>
           <strong>Your settings</strong> — resolution, segment length, storage limit, overlay
-          choices, automation triggers and so on, stored locally via Android DataStore.
+          choices, automation triggers, speed colours and so on, stored locally via Android
+          DataStore, along with small pieces of app state such as whether you have seen the "What's
+          new" notes or answered the rating prompt.
         </li>
       </ul>
       <p>
@@ -199,17 +212,40 @@
     </div>
     </section>
 
-    <section class="card policy-card">
+    <section class="card policy-card" id="transmission">
       <div class="card-body">
       <h2>Data Transmission</h2>
       <p>
         The App has no backend of its own. Nitcart operates no server, and receives no videos,
         audio, location data, device identifiers or usage statistics from you.
       </p>
+      <p>Data leaves your device in these cases only:</p>
+      <ul>
+        <li>
+          <strong>Ads.</strong> What the Google AdMob SDK sends in order to request and measure an
+          ad; see <a href="#advertising">Advertising</a>.
+        </li>
+        <li>
+          <strong>A trip's map.</strong> When you open a trip, its map is drawn with the Google
+          Maps SDK, which downloads the map of the area the route covers from Google. Google
+          receives that area, your IP address and device information, under
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+          The route itself is drawn on the phone.
+        </li>
+        <li>
+          <strong>Place names.</strong> To name where a trip started and ended, the App passes those
+          two positions to the address lookup Android provides (Geocoder), which on most phones is
+          run by Google. This happens while the Trips screen or a trip's page is open, for trips
+          not yet named, and never while you drive.
+        </li>
+        <li>
+          <strong>App updates.</strong> On a copy installed from Google Play, the App asks Google
+          Play whether a newer version is available, and Play downloads it if you agree.
+        </li>
+      </ul>
       <p>
-        The only data leaving your device is what the Google AdMob SDK sends in order to request
-        and measure an ad. Your recordings are never part of that: the App keeps them in private
-        storage and hands them to nothing.
+        Your recordings are never part of any of this: the App keeps them in private storage and
+        hands them to nothing. No location is sent anywhere while a recording is running.
       </p>
     </div>
     </section>
@@ -218,8 +254,9 @@
       <div class="card-body">
       <h2>Advertising (Google AdMob)</h2>
       <p>
-        The App is paid for by ads served through Google AdMob: one in the Clips list, and an
-        occasional full-screen ad between actions.
+        The App is paid for by ads served through Google AdMob: ads placed among the items of the
+        Clips and Trips lists and on a trip's page, and an occasional full-screen ad between
+        actions.
       </p>
       <p>
         To select and measure those ads, Google may collect and use data from your device in
@@ -230,9 +267,10 @@
         aggregate, anonymous revenue figures.
       </p>
       <div class="highlight-box">
-        <strong>What is never sent:</strong> your recordings. The video, audio, coordinates and
-        speed stamped into your clips are not shared with Google, with any advertiser, or with
-        anyone else. The ad SDK has no access to them.
+        <strong>What is never sent to advertisers:</strong> your recordings and your trips. The
+        video, audio, coordinates and speed stamped into your clips, and the routes in your trip
+        history, are not shared with any advertiser or with anyone else. The ad SDK has no access
+        to them.
       </div>
       <p>
         You can reset or delete your advertising ID, and opt out of ad personalisation, at any
@@ -247,12 +285,13 @@
       <h2>Data Sharing</h2>
       <p>
         Nitcart does not sell, trade or otherwise transfer your information to anyone. The only
-        third party involved is Google AdMob, described above, which operates under Google's own
-        privacy terms.
+        third party involved is Google, through AdMob, the Maps SDK, the address lookup and Google
+        Play, as described above, each under Google's own privacy terms.
       </p>
       <p>
         Your footage is shared only when you deliberately share it yourself, using the share
         button, at which point it goes wherever you send it and this policy no longer governs it.
+        Trip history is never shared or exported.
       </p>
     </div>
     </section>
@@ -263,6 +302,11 @@
       <ul>
         <li>Delete individual clips from the Clips screen inside the App.</li>
         <li>
+          Delete trips from the Trips screen, one at a time or several at once, with or without the
+          clips they recorded. Switch "Save trip history" off in Settings and no new trips are
+          saved.
+        </li>
+        <li>
           Loop recording deletes the oldest clips automatically to stay inside the storage limit you
           set. Clips marked as incidents are deliberately exempt and are never deleted
           automatically — you remove those yourself.
@@ -272,8 +316,8 @@
           keeps only the clips an impact or the Incident button claimed.
         </li>
         <li>
-          Uninstalling DashCam removes the App's private storage and every recording in it. There is
-          no copy anywhere else, so export anything you want to keep first.
+          Uninstalling DashCam removes the App's private storage, every recording in it and your
+          trip history. There is no copy anywhere else, so export anything you want to keep first.
         </li>
       </ul>
     </div>
@@ -312,9 +356,9 @@
       <h2>Changes to This Policy</h2>
       <p>
         This policy may be updated from time to time. The "Last updated" date at the top of this page
-        always reflects the current version. If a future version of DashCam ever gained a feature
-        that transmitted data, this policy would be updated before that version shipped, and the
-        change would be described in the App's release notes.
+        always reflects the current version. If a future version of DashCam sends any data not
+        described here, this policy is updated before that version ships, and the change is
+        described in the App's release notes.
       </p>
     </div>
     </section>
@@ -373,7 +417,7 @@
         "@id": "https://apps.nitcart.com/dashcam/privacy-policy.html#webpage",
         "url": "https://apps.nitcart.com/dashcam/privacy-policy.html",
         "name": "DashCam Privacy Policy — Android Dash Cam App | NITCART",
-        "description": "Privacy policy for DashCam for Android. Video, audio and location stay on your phone and NITCART runs no server; only the Google AdMob ad SDK uses the internet.",
+        "description": "Privacy policy for DashCam for Android. Video, audio and trip history stay on your phone and NITCART runs no server. Ads, Play updates and the trip map use the internet.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://apps.nitcart.com/#website"
@@ -384,7 +428,7 @@
         "publisher": {
           "@id": "https://apps.nitcart.com/#organization"
         },
-        "dateModified": "2026-08-19",
+        "dateModified": "2026-10-24",
         "breadcrumb": {
           "@id": "https://apps.nitcart.com/dashcam/privacy-policy.html#breadcrumb"
         }
